@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter 02 - mask-image</title>
+
+    <style>
+
+    .item2 img {mask-image:url('Melon_logo.png') ; -webkit-mask-image:url('Melon_logo.png');
+        mask-size: 100px; -webkit-mask-size:100px; mask-image: linear-gradient(45deg, #000000 25%, rgba(0, 0, 0, 0.2) 25%), linear-gradient(-45deg, #000000 25%, rgba(0, 0, 0, 0.2) 25%), linear-gradient(45deg, rgba(0, 0, 0, 0.2) 75%, #000000 75%),
+    linear-gradient(-45deg, rgba(0, 0, 0, 0.2) 75%, #000000 75%);
+  -webkit-mask-image: linear-gradient(45deg, #000000 25%, rgba(0, 0, 0, 0.2) 25%), linear-gradient(-45deg, #000000 25%, rgba(0, 0, 0, 0.2) 25%), linear-gradient(45deg, rgba(0, 0, 0, 0.2) 75%, #000000 75%),
+    linear-gradient(-45deg, rgba(0, 0, 0, 0.2) 75%, #000000 75%); }
+
+    .item9 img { mask-size: 40px; -webkit-mask-size:40px; 
+        mask-image:url(blob.svg#visual); -webkit-mask-image:url(blob.svg);
+        mask-repeat:no-repeat; -webkit-mask-repeat: no-repeat;
+        mask-position: center center; -webkit-mask-position: center center; }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <figure class="vs item1">
+            <h2 class="tit">원래 이미지</h2>
+            <img src="/cat1.jpg" alt="원래 이미지" class="vs_img">
+        </figure>
+    </div>
+    <div class="wrap">
+        <figure class="vs item2">
+            <h2 class="tit"></h2>
+            <img src="/cat1.jpg" alt="" class="vs_img">
+        </figure>
+    </div>
+    <div class="wrap">
+        <figure class="vs item3">
+            <h2 class="tit"></h2>
+            <img src="/cat1.jpg" alt="" class="vs_img">
+        </figure>
+    </div>
+    <div class="wrap">
+        <figure class="vs item4">
+            <h2 class="tit"></h2>
+            <img src="/cat1.jpg" alt="" class="vs_img">
+        </figure>
+    </div>
+</body>
+</html>

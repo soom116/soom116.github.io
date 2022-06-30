@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./monami/main/favicon.ico">
+    <link rel="apple-touch-icon" href="./monami/main/favicon.ico">
+    <!--검색(메타) 정보-->
+    <meta name="url" content="http://www.monami.com/">
+    <meta name="title" content="모나미">
+    <meta name="description" content="모나미의 기업정보, 제품정보, 미디어, 커뮤니티">
+    <meta name="keywords" content="모나미, 펜, 마카, 형광펜, 미술용품">
+    <!--오픈 그래프-->
+    <meta property="og:url" content="http://www.monami.com/">
+    <meta property="og:title" content="모나미">
+    <meta property="og:description" content="모나미의 기업정보, 제품정보, 미디어, 커뮤니티">
+    <meta property="og:image" content="./img/logo-square-letter.png">
+    <title>MONAMI</title>
+    <!--기본 플러그인 연결-->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!--폰트 모듈 연결-->
+    <style>
+   @font-face {
+       font-family: 'nam';
+       src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Eoe_Zno_L.woff') format('woff');
+       font-weight: normal;
+       font-style: normal;
+    }
+    </style>
+    <!--웹 아이콘 연결-->
+    <!--XEIcon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!--스타일 초기화 모듈 연결-->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="sub_common.css">
+    <style>
+    .page { clear:both; min-height:100vh; display:none; padding-top: 100px; }
+    .page:target { display:block; }
+    #hd { position:fixed; top: 0; left: 0; height:100px; z-index:999;
+    background-color: rgba(255,255,255,0.75); }
+    .date {text-align: center;}
+    .day {font-size: 28px;}
+
+    .tb3 { display:table; width: 700px; margin: 0 auto; margin-bottom: 80px; }
+    .tb3 .tr { display:table-row; }
+    .tb3 .th, .tb3 .td { display:table-cell;  border-bottom:1px solid #333; 
+    line-height: 40px; }
+    .tb3 .tr:first-child .th, .tb3 .tr:first-child .td { border-top:3px solid #333; }
+    .tb3 .th { text-align:center; font-weight: bold; }
+    .tb3 .td { padding-left: 1em; }
+    .tb3 .tr:last-child .th, .tb3 .tr:last-child .td { border-bottom:3px solid #333; }
+    .tb3 .th.e1, .tb3 .td.e2, .tb3 .th.e3 { border-right:1px solid #333; }
+    .tb3 .th.e1, .tb3 .th.e3 { width:100px; }
+    
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header id="hd">
+            <div class="hd_wrap">
+                <a href="index.html" class="logo">
+                    <img src="./monami/logo.svg" alt="로고">
+                </a>
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <span>모나미소개</span>
+                            <ul class="sub">
+                                <li><a href="company.html#page1">CEO 메시지</a></li>
+                                <li><a href="company.html#page2">회사정보</a></li>
+                                <li><a href="company.html#page3">회사연혁</a></li>
+                                <li><a href="company.html#page4">CI</a></li>
+                                <li><a href="company.html#page5">찾아오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>모나미제품</span>
+                            <ul class="sub">
+                                <li><a href="product.html#page1">펜</a></li>
+                                <li><a href="product.html#page2">마카</a></li>
+                                <li><a href="product.html#page3">형광펜</a></li>
+                                <li><a href="product.html#page4">미술용품</a></li>
+                                <li><a href="product.html#page5">카탈로그</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>NEWS & VIDEO</span>
+                            <ul class="sub">
+                                <li><a href="news.html#page1">보도자료</a></li>
+                                <li><a href="news.html#page2">동영상자료</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>고객지원</span>
+                            <ul class="sub">
+                                <li><a href="sup.html#page1">자주묻는질문</a></li>
+                                <li><a href="sup.html#page2">문의하기</a></li>
+                                <li><a href="sup.html#page3">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>기업구매 / 개발</span>
+                            <ul class="sub">
+                                <li><a href="group.html#page1">기업 및 단체 구매</a></li>
+                                <li><a href="group.html#page2">산업용 맞춤 제품개발</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <p id="tnb">
+                    <a href="">HOME</a>
+                    <a href="">SITE MAP</a>
+                    <a href="">CONTACT US</a>
+                </p>
+            </div>
+        </header>
+        <div id="content">
+            <div class="content_wrap">
+                <section class="page" id="page1">
+                    <figure class="sub_ban">
+                        <img src="./monami/news/page_visual5.jpg">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">NEWS & VIDEO</h2>
+                            <p class="sub_com">모나미는 늘 밝고 새로운 미래를 그려나갑니다.</p><br><br><br><br><br><br>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">NEWS & VIDEO</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel1" class="sel">
+                                        <option value="company.html#page1" selected>보도 자료</option>
+                                        <option value="company.html#page2">동영상 자료</option>
+                                </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <h1 class="tit1">MONAMI <span class="redtext">NEWS</span></h1><br><br>
+                            <div class="tb3">
+                                <ul class="tr">
+                                    <li class="th e1">
+                                        <div class="day">18</div>
+                                        <div class="year">2022.04</div>
+                                    <li class="td e2">모나미, 친환경 리사이클링 '엠에코 프러스펜 3000' 출시<br>
+                                        모나미 스테디셀러 프러스펜 3000에 재활용 플라스틱 원료 적용한 리사이클링 제품
+                                    </li>
+                                </ul>
+                                <ul class="tr">
+                                    <li class="th e1">
+                                        <div class="day">14</div>
+                                        <div class="year">2022.03</div>
+                                    <li class="td e2">국민 볼펜 모나미 153, 아날로그 감성 담아 엘라고와 콜라보 제품 출시<br>
+                                        한국인이라면 사용해봤을 모나미 153 볼펜…애플펜슬2 케이스에 완벽 재현
+                                    </li>
+                                </ul>
+                                <ul class="tr">
+                                    <li class="th e1">
+                                        <div class="day">02</div>
+                                        <div class="year">2022.03</div>
+                                    <li class="td e2">모나미, MZ세대 '핫플' 성수동에 모나미 스토어 오픈<br>
+                                        모나미의 과거 성수동 공장 컨셉을 미래지향적으로 재해석
+                                    </li>
+                                </ul>
+                                <ul class="tr">
+                                    <li class="th e1">
+                                        <div class="day">18</div>
+                                        <div class="year">2022.02</div>
+                                    <li class="td e2">모나미, 신학기 브랜드데이 기념 네이버 쇼핑라이브 진행... 최대 39% 할인<br>
+                                        ‘새학기？새출발’ 콘셉트…오는 21일 오후 2시, 네이버 쇼핑라이브 통해
+                                    </li>
+                                </ul>
+                                <ul class="tr">
+                                    <li class="th e1">
+                                        <div class="day">19</div>
+                                        <div class="year">2022.01</div>
+                                    <li class="td e2">모나미, 호랑이의 해 임인년(壬寅年)맞아 ‘153 어흥이’ 에디션 출시<br>
+                                        다양한 패턴의 호랑이를 은증착 효과와 비비드한 컬러로 화려하게 표현
+                                    </li>
+                                </ul>
+                                <ul class="tr">
+                                    <li class="th e1">
+                                        <div class="day">14</div>
+                                        <div class="year">2022.01</div>
+                                    <li class="td e2">모나미, 한국적인 아름다움 담은 라이브칼라 60색 에디션 2종 출시<br>
+                                        노랑나비, 달맞이꽃 등 60가지 색에 한글 단어 색명 적용, 한국적 아름다움 선보여
+                                    </li>
+                                </ul>
+                                <ul class="tr">
+                                    <li class="th e1">
+                                        <div class="day">10</div>
+                                        <div class="year">2022.01</div>
+                                    <li class="td e2">모나미, ‘공부왕찐천재 홍진경’과 협업한 문구세트 출시<br>
+                                        100만 구독자 보유한 ‘공부왕찐천재 홍진경’과 60년 문구 기업 ‘모나미’의 만남
+                                    </li>
+                                </ul>
+                                <ul class="tr">
+                                    <li class="th e1">
+                                        <div class="day">22</div>
+                                        <div class="year">2021.12</div>
+                                    <li class="td e2">모나미, 공부 필수템 3색 볼펜 ‘FX ZETA C3’ 출시<br>
+                                        수험생들이 믿고 쓰는 ‘FX ZETA’, 공부 필수템 3색 볼펜 출시…활용도 높은 컬러 구성
+                                    </li>
+                                </ul>
+                                <ul class="tr">
+                                    <li class="th e1">
+                                        <div class="day">13</div>
+                                        <div class="year">2021.12</div>
+                                    <li class="td e2">모나미, 생활마카 올인원 세트 ‘마카다모아’ 라이브커머스에서 단독 선출시<br>
+                                        다양한 용도의 생활마카 ‘올인원 세트’로 구성한 패키지 상품 첫 선출시..
+                                    </li>
+                                </ul>
+                                <ul class="tr">
+                                    <li class="th e1">
+                                        <div class="day">23</div>
+                                        <div class="year">2021.11</div>
+                                    <li class="td e2">모나미, ‘모나미몰 블랙프라이데이’ 진행… 최대 90% 할인<br>
+                                        23일부터 26일 오전 9시까지 1년에 단 한 번뿐인 역대급 할인 행사 진행
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page2">
+                    <figure class="sub_ban">
+                        <img src="./monami/news/page_visual5.jpg"><br>
+                        <div class="tit_box">
+                            <h2 class="sub_tit">NEWS & VIDEO</h2>
+                            <p class="sub_com">모나미는 늘 밝고 새로운 미래를 그려나갑니다.</p><br><br><br><br><br><br>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">NEWS & VIDEO</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel2" class="sel">
+                                        <option value="company.html#page1">보도 자료</option>
+                                        <option value="company.html#page2" selected>동영상 자료</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <h1 class="tit1">MONAMI <span class="redtext">VIDEO</span></h1><br><br>
+                            <table width="1400">
+                                <tr>
+                                    <td>새로운 경험과 다양한 체험이 가능한,<br>모나미 스토어 성수점 OPEN!</td>
+                                    <td>내 손 안에 경복궁과 종묘,<br>라이브칼라 60색 스페셜 에디션!</td>
+                                    <td>당신의 일상을 채워줄 파스텔 형광펜,<br>에센티 트윈 형광펜!</td>
+                                    <td>연말 필수템☆ 다이어리 노트와 펜으로 맞이하는 새로운 해!<br>제니스 & 지퀀스 런칭 패키지!</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <video src="./monami/news1.mp4" height="300" width="300"
+                                        poster="./monami/news/1.jpg" controls loop></video>
+                                    </td>
+                                    <td>
+                                        <video src="./monami/news2.mp4" height="300" width="300"
+                                        poster="./monami/news/2.png" controls loop></video>
+                                    </td>
+                                    <td>
+                                        <video src="./monami/news3.mp4" height="300" width="300"
+                                        poster="./monami/news/3.jpg" controls loop></video>
+                                    </td>
+                                    <td>
+                                        <video src="./monami/news4.mp4" height="300" width="300"
+                                        poster="./monami/news/4.jpg" controls loop></video>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <script>
+            $(document).ready(function(){
+                $(".sel").change(function(){
+                    location.href = this.value;
+                });
+            });    
+            </script>
+        </div>    
+        <footer id="ft">
+            <div class="ft_wrap">
+                <nav class="fnb">
+                    <a href="">회사소개</a>
+                    <a href="">개인정보처리방침</a>
+                    <a href="">이메일무단수집거부</a>
+                </nav>
+                <nav class="snb">
+                    <ul>
+                        <li class="sns1">
+                            <a href="sns.html#page1" title="유튜브"><i class="xi-youtube-play"></i></a>
+                        </li>
+                        <li class="sns2">
+                            <a href="sns.html#page2" title="페이스북"><i class="xi-facebook"></i></a>
+                        </li>
+                        <li class="sns3">
+                            <a href="sns.html#page3" title="네이버 포스트"><i class="xi-naver"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright">ADDRESS:경기도 용인시 수지구 손곡로17 | TEL:031-216-0153 | FAX:031-270-5154<br>Copyright © 2017 MONAMI.CO.,LTD. ALL RIGHTS RESERVED</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./monami/main/favicon.ico">
+    <link rel="apple-touch-icon" href="./monami/main/favicon.ico">
+    <!--검색(메타) 정보-->
+    <meta name="url" content="http://www.monami.com/">
+    <meta name="title" content="모나미">
+    <meta name="description" content="모나미의 기업정보, 제품정보, 미디어, 커뮤니티">
+    <meta name="keywords" content="모나미, 펜, 마카, 형광펜, 미술용품">
+    <!--오픈 그래프-->
+    <meta property="og:url" content="http://www.monami.com/">
+    <meta property="og:title" content="모나미">
+    <meta property="og:description" content="모나미의 기업정보, 제품정보, 미디어, 커뮤니티">
+    <meta property="og:image" content="./img/logo-square-letter.png">
+    <title>MONAMI</title>
+    <!--기본 플러그인 연결-->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!--폰트 모듈 연결-->
+    <style>
+   @font-face {
+       font-family: 'nam';
+       src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Eoe_Zno_L.woff') format('woff');
+       font-weight: normal;
+       font-style: normal;
+    }
+    </style>
+    <!--웹 아이콘 연결-->
+    <!--XEIcon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!--스타일 초기화 모듈 연결-->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="sub_common.css">
+    <style>
+    .page { clear:both; min-height:100vh; display:none; padding-top: 100px; }
+    .page:target { display:block; }
+    #hd { position:fixed; top: 0; left: 0; height:100px; z-index:999;
+    background-color: rgba(255,255,255,0.75); }
+    .date {text-align: center;}
+    .day {font-size: 28px;}
+    
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header id="hd">
+            <div class="hd_wrap">
+                <a href="index.html" class="logo">
+                    <img src="./monami/logo.svg" alt="로고">
+                </a>
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <span>모나미소개</span>
+                            <ul class="sub">
+                                <li><a href="company.html#page1">CEO 메시지</a></li>
+                                <li><a href="company.html#page2">회사정보</a></li>
+                                <li><a href="company.html#page3">회사연혁</a></li>
+                                <li><a href="company.html#page4">CI</a></li>
+                                <li><a href="company.html#page5">찾아오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>모나미제품</span>
+                            <ul class="sub">
+                                <li><a href="product.html#page1">펜</a></li>
+                                <li><a href="product.html#page2">마카</a></li>
+                                <li><a href="product.html#page3">형광펜</a></li>
+                                <li><a href="product.html#page4">미술용품</a></li>
+                                <li><a href="product.html#page5">카탈로그</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>NEWS & VIDEO</span>
+                            <ul class="sub">
+                                <li><a href="news.html#page1">보도자료</a></li>
+                                <li><a href="news.html#page2">동영상자료</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>고객지원</span>
+                            <ul class="sub">
+                                <li><a href="sup.html#page1">자주묻는질문</a></li>
+                                <li><a href="sup.html#page2">문의하기</a></li>
+                                <li><a href="sup.html#page3">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>기업구매 / 개발</span>
+                            <ul class="sub">
+                                <li><a href="group.html#page1">기업 및 단체 구매</a></li>
+                                <li><a href="group.html#page2">산업용 맞춤 제품개발</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <p id="tnb">
+                    <a href="">HOME</a>
+                    <a href="">SITE MAP</a>
+                    <a href="">CONTACT US</a>
+                </p>
+            </div>
+        </header>
+        <div id="content">
+            <div class="content_wrap">
+                <section class="page" id="page1">
+                    <figure class="sub_ban">
+                        <img src="./monami/group/page_visual8.jpg">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">기업구매 및 단체 구매</h2>
+                            <p class="sub_com"></p><br><br><br><br><br><br>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index.html" class="home">HOME</a>
+                                </li>
+                                <li class="item2">기업구매 및 단체구매</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel1" class="sel">
+                                        <option value="group.html#page1" selected>기업 및 단체 구매</option>
+                                        <option value="group.html#page2">산업용 맞춤 제품개발</option>
+                                </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <h1 class="tit1">PRODUCT</h1><br><br>
+                            <p>내용</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page2">
+                    <figure class="sub_ban">
+                        <img src="./monami/group/page_visual8.jpg"><br>
+                        <div class="tit_box">
+                            <h2 class="sub_tit">산업용 맞춤 제품개발</h2>
+                            <p class="sub_com">맞춤 프로모션 솔루션과 제품을 제공합니다.</p><br><br><br><br><br><br>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index.html" class="home">HOME</a>
+                                </li>
+                                <li class="item2">산업용 맞춤 제품개발</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel2" class="sel">
+                                        <option value="group.html#page1">기업 및 단체 구매</option>
+                                        <option value="group.html#page2" selected>산업용 맞춤 제품개발</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <h1 class="tit1">PRODUCT <span class="redtext">CUSTOMIZED</span></h1><br><br>
+                            <p class="ptit">1. 사업 소개</p> <br>
+                            <p class="ptit2">종합 문구를 선도하는 모나미는 가정, 사무실을 넘어 산업현장까지 창의성과 간결함으로 효율성을 향상시키는데 주도적인 역할을 하고 있으며, 특히 산업현장(자동차/섬유/선박 등)에서 필요한 제품을<br>
+                                용도에 맞춰 다양한 옵션으로 고객이 원하는 제품을 맞춤 개발하고 있습니다.</p><br>
+                            <img src="./monami/group/1-2.png"><br><br>
+                            <p class="ptit">2. 산업용 OEM 제품 개발 프로세스</p> <br>
+                            <img src="./monami/group/1-3.png"><br><br>
+                            <p class="ptit">3. 산업용 OEM 제품</p> <br>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="./monami/group/1-4.png">
+                                    </td>
+                                    <td>
+                                        <img src="./monami/group/1-5.png">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>프로 페인트 마카</td>
+                                    <td>스틸 마카 CLIP & TWIN</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        새로운 기술을 적용한 저자극성 알코올 타입 잉크 (Xylene-Free)<br>
+                                        속건성으로 작업이 편리<br>
+                                        내수성, 내광성이 우수하여 외부환경에 적합<br>
+                                        금속, 나무, 플라스틱, 유리 등 다양하고 거친 표면 및 기름진 표면에도 사용 가능<br>
+                                        플라스틱 바디와 클릭 적용으로 휴대가 편리<br>
+                                        내구성이 우수한 닙을 사용하여 쉽게 마모되지 않고 장시간 사용 가능
+                                    </td>
+                                    <td>
+                                        오일 묻은 금속재질에 사용 가능한 전문 마카<br>
+                                        속건성으로 표기의 효율성 높음<br>
+                                        물 또는 알칼리 수용액으로 흔적 없이 쉽게 세척됨<br>
+                                        자동차, 선박 등 탈지공정이 있는 산업에서 사용<br>
+                                        새로운 기술을 적용한 저자극성 알코올 타입 잉크 (Xylene-Free)<br>
+                                        클립을 추가하여 휴대성 강화(CLIP)<br>
+                                        둥근닙과 사각닙의 트윈 타입으로 편리성과 효율성 강화(TWIN)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./monami/group/1-6.png">
+                                    </td>
+                                    <td>
+                                        <img src="./monami/group/1-7.png">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>프로 유성매직</td>
+                                    <td>고순도 마카500</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        사용자의 편의를 고려한 미끄럼 방지 고무그립으로 장갑을 낀 상태로도 편리하게 사용<br>
+                                        금속, 나무, 플라스틱, 유리 등 다양하고 거친 표면에 사용 가능<br>
+                                        2009년도 레드닷 디자인 어워드 수상<br>
+                                        기름진 표면에서도 사용 가능
+                                    </td>
+                                    <td>
+                                        원자력 발전소, 항공기 부품, 조선소 등 금속부식에 민감한 산업에 적합<br>
+                                        황 (S), 할로 ( CI, Br) 등 13개 규제 기준에 적합한 초 고순도 잉크<br>
+                                        잉크 Lot에 따른 규제물질 공인 인증 성적서 발급 가능
+                                    </td>
+                                </tr>
+                            </table>
+                            <img src="./monami/group/1-8.png">
+                            <img src="./monami/group/1-9.png">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <script>
+            $(document).ready(function(){
+                $(".sel").change(function(){
+                    location.href = this.value;
+                });
+            });    
+            </script>
+        </div>    
+        <footer id="ft">
+            <div class="ft_wrap">
+                <nav class="fnb">
+                    <a href="">회사소개</a>
+                    <a href="">개인정보처리방침</a>
+                    <a href="">이메일무단수집거부</a>
+                </nav>
+                <nav class="snb">
+                    <ul>
+                        <li class="sns1">
+                            <a href="sns.html#page1" title="유튜브"><i class="xi-youtube-play"></i></a>
+                        </li>
+                        <li class="sns2">
+                            <a href="sns.html#page2" title="페이스북"><i class="xi-facebook"></i></a>
+                        </li>
+                        <li class="sns3">
+                            <a href="sns.html#page3" title="네이버 포스트"><i class="xi-naver"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright">ADDRESS:경기도 용인시 수지구 손곡로17 | TEL:031-216-0153 | FAX:031-270-5154<br>Copyright © 2017 MONAMI.CO.,LTD. ALL RIGHTS RESERVED</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

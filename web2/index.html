@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images2/favicon.ico">
+    <link rel="apple-touch-icon" href="images2/favicon.ico">
+    <!-- 검색(메타)엔진정보 -->
+    <meta name="ulr" content="https://www.abko12.co.kr">
+    <meta name="title" content="앱코">
+    <meta name="description" content="../images2/bx_loader.gif">
+    <meta name="keyword" content="앱코, 게임단, 상품">
+    <!-- 오픈 그래프 -->
+    <meta property="og:ulr" content="https://www.abko12.co.kr">
+    <meta property="og:title" content="앱코">
+    <meta property="og:description" content="앱코 기업정보, 제품, 게임단">
+    <meta property="og:img" content="../images2/bx_loader.gif">
+
+    <title>Abko</title>
+    <!-- 기본 플러그 연결 -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!-- 웹폰트/폰트 모듈 연결 -->
+    <!-- 구글폰트 복붙-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/Yeongdo-Rg.woff">
+    
+    
+    <!-- 웹아이콘 연결 -->
+    <!-- XEicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- 스타일 초기화 모듈 연결 -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="./css/reset.css"> 또다른 방법 -->
+    <style>
+        /* 눈누폰트 복붙 */
+    @font-face {
+        font-family: 'yung';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/Yeongdo-Rg.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }</style>
+    <style>
+        /* 아래의 네줄은 기본 초기화셋팅*/
+ *{margin: 0; padding: 0;}
+ body, html {font-family: 'Dongle', sans-serif; width: 100%;}  
+ ul {list-style: none;}
+ a{text-decoration: none; }
+
+
+ .vs_tit {font-family: 'Yung'; }
+ i[class*='xi'] {font-size: 20px; color: ;}
+ i[class*='xi']:hover {color:aquamarine;}
+
+.wrap { clear:both; width: 100%;}
+/*헤더*/
+ #hd {clear:both; width: 100%; position: fixed; top: 0; left: 0; height: 80px; z-index: 999;
+background-color: rgba(255,255,255);}
+ .hd_wrap {clear: both;width: 1280px; ; margin: 0 auto;}
+ .logo { display:block; width: 200px; float: left; margin-top: 20px;}
+ .logo img {display: block; width: 80%; margin-top: 5px; margin-bottom: 10px;}
+ #gnb {float:left; font-size: 30px;  margin-top: 10px;}
+ #gnb > ul > li {float: left; padding-left: 50px; padding-right: 30px; position: relative;
+line-height: 38px; padding-top: 10px;  }
+
+ #gnb > ul > li > span {display: block; line-height: 40px; cursor: pointer;}
+ #gnb ul li .sub {display: none; position: absolute; left: 10; top: 40; z-index: 999; padding-left: 10px; width: 150px; height: 440px; background-color: #fff;}
+ #gnb ul li:hover .sub { display: block;}
+ #gnb ul li .sub li a { color: black;}
+ #gnb ul li .sub li:hover a{ color: rgba(233, 213, 37, 0.815); text-decoration: underline;}
+ #gnb ul li .sub li { line-height: 38px; padding-top: 8px; }
+ #gnb ul li:hover span{ color: rgba(42, 241, 198, 0.61);} 
+
+ 
+ #tnb {float:right; padding-top: 10px;  margin-top: 20px;}
+ #tnb a {font-size: 20px; padding-left: 20px;}
+ #tnb a:hover{ color: cornflowerblue; text-decoration: underline;}
+
+ #content {clear: both; width: 100%;}
+ /*바디*/
+ #vs { width: 100%; overflow: hidden; }
+ .img_box { width: 400%;}
+ .img_box li { float: left; width: 25%; position: relative;}
+ .img_box li a { display: block;}
+ .img_box li a img{ display: block; width: 100%; height: auto; }
+ .btn_group { position:absolute; bottom:0px; left:90px; z-index:40; }
+ .btn_group button { display:block; width: 80px; height: 80px; float:left; 
+    background-color:rgba(0, 0, 0, 0.11); border:none; outline: none; color:#fff; }
+ .btn_group button i[class*='xi'] { color: #fff; }
+ .btn_group button:hover i[class*='xi'] { cursor:pointer; color:gold; }
+
+ .grid_box{clear: both; width: 100%;}
+ .grid_box ul li a img{ display: block; width: 100%;}
+ .grid_box ul li {float: left;}
+ .col2{width: 12.5%;}
+ <style>
+/* 푸터 */
+    #ft { clear:both; width: 100%; padding-top: 20px; }
+    .ft_wrap { clear:both; width: 1280px; margin: 0 auto; }
+    .fnb { float:left; }
+    .fnb a { display:block; float:left; margin:14px; 
+        margin-left: 0; margin-right: 28px; font-size:12px; }
+    .ft_logo {float: left;}    
+    .snb ul li a { float:right; margin-left: 28px; margin-right: 0px; margin-top: 10px; }
+    .copyright { float: left; padding-bottom: 50px; font-size: 20px; margin-left: 0px; margin-right: 0px; }
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <header id="hd">
+            <div class="hd_wrap">
+                <a href="index.html" class="logo">
+                    <img src="./images2/logo_red.png" alt=""></a>
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <span>회사소개</span>
+                            <ul class="sub">
+                                <li><a href="company.html#page1">ABKO</a></li>
+                                <li><a href="company.html#page2">CEO인사말</a></li>
+                                <li><a href="company.html#page3">CI.BI</a></li>
+                                <li><a href="company.html#page4">오시는 길</a></li>
+                                <li><a href="company.html#page5">연혁</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>브랜드</span>
+                            <ul class="sub">
+                                <li><a href="brand.html#page1">ABKO</a></li>
+                                <li><a href="brand.html#page2">ABKOlife</a></li>
+                                <li><a href="brand.html#page3">CQX</a></li>
+                                <li><a href="brand.html#page4">NCOER</a></li>
+                                <li><a href="brand.html#page5">ABKONCORE</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>공지사항</span>
+                            <ul class="sub">
+                                <li><a href="notice.html#page1">공지사항</a></li>
+                                <li><a href="notice.html#page2">이벤트</a></li>
+                                <li><a href="notice.html#page3">뉴스</a></li>
+                                <li><a href="notice.html#page4">게임단</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>고객지원</span>
+                            <ul class="sub">
+                                <li><a href="support.html#page1">게시판</a></li>
+                                <li><a href="support.html#page2">자료실</a></li>
+                                <li><a href="support.html#page3">자주 묻는 질문</a></li>
+                                <li><a href="support.html#page4">대리점 정보</a></li>
+                                <li><a href="support.html#page5">SHOP</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>투자정보</span>
+                            <ul class="sub">
+                                <li><a href="financial.html#page1">재무정보</a></li>
+                                <li><a href="financial.html#page2">주가정보</a></li>
+                                <li><a href="financial.html#page3">공시/공고</a></li>
+                                <li><a href="financial.html#page4">내부정보관리규정</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <p id="tnb"><a href="">English</a><a href="">China</a><a href="">Spanish</a></p>
+
+                
+            </div>
+
+        </header>
+        <div id="content">
+        
+            <figure id="vs">
+                <ul class="img_box">
+                    <li>
+                        <a href="">
+                            <img src="./images2/Br0SSivp61.jpg" alt="">
+                            <div class="tit_box">
+                                <p class="vs_com"></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images2/9JwCCGdt91.jpg" alt="">
+                            <div class="tit_box">
+                                <p class="vs_com"></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images2/Gt0wjUga1.jpg" alt="">
+                            <div class="tit_box">
+                                <p class="vs_com"></p>
+                            </div>
+                        </a>
+                    </li>                  
+                </ul_img_box>
+                <div class="btn_group">
+                    <button class="prev_btn"><i class="xi-arrow-left"></i></button>
+                    <button class="next_btn"><i class="xi-arrow-right"></i></button>
+                </div>
+                <script>
+                $(document).ready(function(){
+                    wd = $(window).width();
+                    var intv = setInterval(function(){
+                        ani1();
+                    }, 5000);
+                    function ani1(){
+                        $(".img_box").not(":animated").animate({"margin-left":-wd+"px"}, 600, function(){
+                            $(".img_box li").eq(0).appendTo($(".img_box"));
+                            $(".img_box").css("margin-left","0px");
+                        });
+                    }
+                    function ani2(){
+                        $(".img_box").css("margin-left",-wd+"px");
+                        $(".img_box li:last-child").prependTo($(".img_box"));
+                        $(".img_box").not(":animated").animate({"margin-left":"0px"}, 600);
+                    }
+                    $(".btn_group .next_btn").click(function(){
+                        clearInterval(intv);
+                        ani1();
+                        intv = setInterval(function(){ ani1(); }, 5000);
+                    });
+                    $(".btn_group .prev_btn").click(function(){
+                        clearInterval(intv);
+                        ani2();
+                        intv = setInterval(function(){ ani1(); }, 5000);
+                    });
+                });    
+                </script>
+    
+            </figure>
+        </div>
+
+        <div class="grid_box">
+            <ul>
+                <li class="col2">
+                    <a href="">
+                        <img src="./images2/4uOc9md3L.png" alt="">
+                        <h3 class="col_tit"></h3>
+                        <p class="col_com"></p>
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="col2">
+                    <a href="">
+                        <img src="./images2/A9Gdmw7Uu.png" alt="">
+                        <h3 class="col_tit"></h3>
+                        <p class="col_com"></p>
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="col2">
+                    <a href="">
+                        <img src="./images2/CCR6KChOJ.png" alt="">
+                        <h3 class="col_tit"></h3>
+                        <p class="col_com"></p>
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="col2">
+                    <a href="">
+                        <img src="./images2/zXaXf6yZR.png" alt="">
+                        <h3 class="col_tit"></h3>
+                        <p class="col_com"></p>
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="col2">
+                    <a href="">
+                        <img src="./images2/kWV7mDiK91.png" alt="">
+                        <h3 class="col_tit"></h3>
+                        <p class="col_com"></p>
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="col2">
+                    <a href="">
+                        <img src="./images2/mPFJTzq5n.png" alt="">
+                        <h3 class="col_tit"></h3>
+                        <p class="col_com"></p>
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="col2">
+                    <a href="">
+                        <img src="./images2/o6BwQYlsk.png" alt="">
+                        <h3 class="col_tit"></h3>
+                        <p class="col_com"></p>
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="col2">
+                    <a href="">
+                        <img src="./images2/qWvXgK814.png" alt="">
+                        <h3 class="col_tit"></h3>
+                        <p class="col_com"></p>
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <footer id="ft">
+            <div class="ft_wrap">
+                <nav class="fnb"><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a></nav>
+                <nav class="snb">
+                    <ul>
+                        <li><a href="" title="네이버"><i class="xi-naver-square"></i></a></li>
+                        <li><a href="" title="페이스북"><i class="xi-facebook-official"></i></a></li>
+                        <li><a href="" title="인스타그램"><i class="xi-instagram"></i></a></li>
+                        <li><a href="" title="카카오톡"><i class="xi-kakaotalk"></i></a></li>
+                    </ul>
+                    <img class="ft_logo" src="https://www.abko.co.kr/img/main/footer_logo.png" alt="">    
+                </nav>
+                
+                <p class="copyright">상호 : 주식회사 앱코 대표이사 : 조수민 개인정보관리책임자 : 펭수 관리자 메일 : webmaster2020@abko.co.kr (제휴, 상담문의 불가)
+                    통신판매신고 : 2020-서울강서-0310 본사 : 서울특별시 강남구 삼청동 20, 7층 (삼청동) 사업자 등록번호 : 000-00-00000
+                    고객센터 : 1644-0844 업무시간 : 09:30~17:00 점심시간 : 12:00~13:00 (공휴일 및 토/일 휴무)</p>
+            </div>
+
+        </footer>
+    </div>
+    
+</body>
+</html>

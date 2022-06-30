@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images2/favicon.ico">
+    <link rel="apple-touch-icon" href="images2/favicon.ico">
+    <!-- 검색(메타)엔진정보 -->
+    <meta name="ulr" content="https://www.abko12.co.kr">
+    <meta name="title" content="앱코">
+    <meta name="description" content="../images2/bx_loader.gif">
+    <meta name="keyword" content="앱코, 게임단, 상품">
+    <!-- 오픈 그래프 -->
+    <meta property="og:ulr" content="https://www.abko12.co.kr">
+    <meta property="og:title" content="앱코">
+    <meta property="og:description" content="앱코 기업정보, 제품, 게임단">
+    <meta property="og:img" content="../images2/bx_loader.gif">
+
+    <title>Abko</title>
+    <!-- 기본 플러그 연결 -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!-- 웹폰트/폰트 모듈 연결 -->
+    <!-- 구글폰트 복붙-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <link  href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/Yeongdo-Rg.woff">
+    
+    
+    <!-- 웹아이콘 연결 -->
+    <!-- XEicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- 스타일 초기화 모듈 연결 -->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="sub_common.css">
+    <!-- <link rel="stylesheet" href="./css/reset.css"> 또다른 방법 -->
+    <style>
+        /* 눈누폰트 복붙 */
+    @font-face {
+        font-family: 'yung';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/Yeongdo-Rg.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }</style>
+ 
+ <style>
+     /* 공통 */
+  #content { clear:both; width: 100%; }
+    .page { clear:both; width: 100%; display:none; }
+    .sub_ban { clear:both; width: 100%; }
+    .sub_ban img { display:block; width: 100%; }
+    .bread_box { clear:both; width: 100%; border-top:2px solid #eee; 
+    border-bottom:2px solid #eee; padding-bottom: 10px; }
+    .bread_wrap { clear: both; width: 1200px; margin: 0 auto; height: 40px; 
+    padding-top: 1em; padding-bottom: 1em; line-height: 40px; font-size:18px; }
+    .bread_wrap a { padding-right: 10px; }
+    .bread_wrap a:after { content:">"; padding-left: 10px;  }
+    .sel option { font-size:18px; }
+    .con_wrap { clear:both; width: 100%; }
+    .page_wrap { clear:both; width: 1200px; margin: 0 auto; }
+    .page_tit { font-size:40px; line-height: 2.4; padding-top: 1em; 
+    padding-bottom: 0.5em; }
+    .page:target { display:block; }
+/* 테이블3 */
+    .tb3 { display:table; width: 700px; margin: 0 auto; margin-bottom: 80px; }
+  .tb3 .tr { display:table-row; }
+  .tb3 .th, .tb3 .td { display:table-cell;  border-bottom:1px solid #333; 
+  line-height: 40px; }
+  .tb3 .tr:first-child .th, .tb3 .tr:first-child .td { border-top:3px solid rgb(17, 3, 20); }
+  .tb3 .th { text-align:center; font-weight: bold; }
+  .tb3 .td { padding-left: 1em; }
+  .tb3 .tr:last-child .th, .tb3 .tr:last-child .td { border-bottom:3px solid rgb(12, 46, 58); }
+  .tb3 .th.e1, .tb3 .td.e2, .tb3 .th.e3 { border-right:1px solid #333; }
+  .tb3 .th.e1, .tb3 .th.e3 { width:100px; }
+</style>
+<style>
+.tit_box { font-size: x-large;}
+.sub_tit, .sub_com { color:#000; }
+.sub_tit { font-size: 30px;}
+.sub_tit.w , .col_com.w { color:#fff; text-shadow:1px 1px 1px #333; }
+.sub_tit.w { padding-top: 0; }
+.sub_com{font-size: 30px;}
+</style>    
+    
+
+</head>
+<body>
+    <div class="wrap">
+        <header id="hd">
+            <div class="hd_wrap">
+                <a href="index.html" class="logo">
+                    <img src="https://www.abko.co.kr/img/main/logo_red.png" alt=""></a>
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <span>회사소개</span>
+                            <ul class="sub" id="page_wrap">
+                                <li><a href="company.html#page1">ABKO</a></li>
+                                <li><a href="company.html#page2">CEO인사말</a></li>
+                                <li><a href="company.html#page3">CI.BI</a></li>
+                                <li><a href="company.html#page4">오시는 길</a></li>
+                                <li><a href="company.html#page5">연혁</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>브랜드</span>
+                            <ul class="sub">
+                                <li><a href="brand.html#page1">ABKO</a></li>
+                                <li><a href="brand.html#page2">ABKOlife</a></li>
+                                <li><a href="brand.html#page3">CQX</a></li>
+                                <li><a href="brand.html#page4">NCOER</a></li>
+                                <li><a href="brand.html#page5">ABKONCORE</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>공지사항</span>
+                            <ul class="sub">
+                                <li><a href="notice.html#page1">공지사항</a></li>
+                                <li><a href="notice.html#page2">이벤트</a></li>
+                                <li><a href="notice.html#page3">뉴스</a></li>
+                                <li><a href="notice.html#page4">게임단</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>고객지원</span>
+                            <ul class="sub">
+                                <li><a href="support.html#page1">게시판</a></li>
+                                <li><a href="support.html#page2">자료실</a></li>
+                                <li><a href="support.html#page3">자주 묻는 질문</a></li>
+                                <li><a href="support.html#page4">대리점 정보</a></li>
+                                <li><a href="support.html#page5">SHOP</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>투자정보</span>
+                            <ul class="sub">
+                                <li><a href="financial.html#page1">재무정보</a></li>
+                                <li><a href="financial.html#page2">주가정보</a></li>
+                                <li><a href="financial.html#page3">공시/공고</a></li>
+                                <li><a href="financial.html#page4">내부정보관리규정</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <p id="tnb">
+                    <a href="">English</a>
+                    <a href="">China</a>
+                    <a href="">Spanish</a>
+                </p>
+            </div>
+        </header>
+        <div id="content">
+            <div class="content_wrap">
+                <section class="page" id="page1">
+                    <figure class="sub_ban">
+                        <img src="https://www.abko.co.kr/img/sub/sub_visual_05.png" alt="재무정보">
+                    </figure>
+                        <div class="tit_box">
+                            <h2 class="sub_tit">재무정보</h2>
+                            <p class="sub_com">앱코의 재무정보</p>
+                        </div>
+                   
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index.html" class="home">HOME</a>
+                                </li>
+                                <li class="item2">재무정보</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel1" class="sel">
+                                        <option value="financial.html#page1" selected>재무정보</option>
+                                        <option value="financial.html#page2">주가정보</option>
+                                        <option value="financial.html#page3">공시/공고</option>
+                                        <option value="financial.html#page4">내부정보관리규정</option>
+                                    
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page2">
+                    <figure class="sub_ban">
+                        <img src="https://www.abko.co.kr/img/sub/sub_visual_05.png" alt="주가정보">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">주가정보</h2>
+                            <p class="sub_com">앱코의 주가정보</p>
+                            <a href="https://www.blackrock.com/kr" alt="자산운용">
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index.html" class="home">HOME</a>
+                                </li>
+                                <li class="item2">주가정보</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel2" class="sel">
+                                        <option value="financial.html#page1">재무정보</option>
+                                        <option value="financial.html#page2" selected>주가정보</option>
+                                        <option value="financial.html#page3">공시/공고</option>
+                                        <option value="financial.html#page4">내부정보관리규정</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page3">
+                    <figure class="sub_ban">
+                        <img src="https://www.abko.co.kr/img/sub/sub_visual_05.png" alt="공시/공고">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">공시/공고</h2>
+                            <p class="sub_com"></p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index.html" class="home">HOME</a>
+                                </li>
+                                <li class="item2">공시/공고</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel3" class="sel">
+                                        <option value="financial.html#page1">재무정보</option>
+                                        <option value="financial.html#page2">주가정보</option>
+                                        <option value="financial.html#page3" selected>공시/공고</option>
+                                        <option value="financial.html#page4">내부정보관리규정</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <h3 class="sec_tit">테이블3 제목</h3>
+                            <div class="tb3">
+                                <ul class="tr">
+                                    <li class="th e1">항목명</li>
+                                    <li class="td e2">항목 내용</li>
+                                    <li class="th e3">항목명</li>
+                                    <li class="td e4">항목 내용</li>
+                                </ul>
+                                <ul class="tr">
+                                    <li class="th e1">항목명</li>
+                                    <li class="td e2">항목 내용</li>
+                                    <li class="th e3">항목명</li>
+                                    <li class="td e4">항목 내용</li>
+                                </ul>
+                                <ul class="tr">
+                                    <li class="th e1">항목명</li>
+                                    <li class="td e2">항목 내용</li>
+                                    <li class="th e3">항목명</li>
+                                    <li class="td e4">항목 내용</li>
+                                </ul>
+                                <ul class="tr">
+                                    <li class="th e1">항목명</li>
+                                    <li class="td e2">항목 내용</li>
+                                    <li class="th e3">항목명</li>
+                                    <li class="td e4">항목 내용</li>
+                                </ul>
+                            </div>  
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page4">
+                    <figure class="sub_ban">
+                        <img src="https://www.abko.co.kr/img/sub/sub_visual_05.png" alt="내부정보관리규정">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">내부정보관리규정</h2>                        
+                        </div>
+                    </figure>  
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index.html" class="home">HOME</a>
+                                </li>
+                                <li class="item2">내부정보관리규정</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel4" class="sel">
+                                        <option value="financial.html#page1">재무정보</option>
+                                        <option value="financial.html#page2">주가정보</option>
+                                        <option value="financial.html#page3">공시/공고</option>
+                                        <option value="financial.html#page4" selected>내부정보관리규정</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <textarea cols="100" lows="200" readonly>제1장 총 칙
+
+
+                                제1조(목적) 이 규정은 ｢자본시장과 금융투자업에 관한 법률｣(이하 “법”이라 한다) 및 제반 법규에 따른 신속․정확한 공시 및 임원․직원의 내부자거래 방지를 위하여 회사 내부정보의 종합관리 및 적절한 공개 등에 관한 사항을 정함을 목적으로 한다.
+                                
+                                제2조(용어의 정의) ① 이 규정에서 “내부정보”라 함은 한국거래소(이하 “거래소”라 한다)의 코스닥시장 공시규정(이하 “공시규정”이라 한다) 제1편에 의한 공시의무사항과 그 밖에 회사의 경영 또는 재산상황 등에 관한 것으로서 투자자의 투자판단에 영향을 미칠 수 있는 사항을 말한다.
+                                ② 이 규정에서 “공시책임자”라 함은 공시규정 제2조제4항에 따라 회사를 대표하여 신고업무를 수행할 수 있는 자를 말한다.
+                                ③ 이 규정에서 “임원”이라 함은 이사(｢상법｣ 제401조의2제1항 각 호의 어느 하나에 해당하는 자를 포함한다) 및 감사를 말한다.
+                                ④ 제1항부터 제3항 이외에 이 규정에서 사용하는 용어의 정의에 관하여는 관련 법령과 규정에서 사용하는 용어의 정의에 의한다.
+                                
+                                제3조(적용범위) 공시, 내부자거래 및 내부정보관리에 관한 사항은 관련 법규 또는 정관에 정한 것을 제외하고는 이 규정에 따른다.
+                                
+                                
+                                제2장 내부정보의 관리
+                                
+                                
+                                제4조(내부정보의 관리) ① 임원․직원은 업무상 알게 된 회사의 내부정보를 엄중히 관리하여야 하고, 업무상 필요한 경우를 제외하고는 내부정보를 사내 또는 사외에 유출하여서는 아니 된다. ② 대표이사는 내부정보 및 그와 관련된 문서 등의 보관, 전달, 파기 등에 관한 구체적인 기준을 정하는 등 내부정보관리를 위해 필요한 조치를 취하여야 한다.
+                                
+                                
+                                5. 내부정보의 관리를 담당하거나 공시업무를 담당하는 부서 또는 임원․직원에 대한 지휘 및 감독
+                                6. 그 밖에 내부정보관리제도의 운영을 위해 필요하다고 대표이사가 인정한 업무
+                                ③ 공시책임자는 그 직무를 수행함에 있어서 다음 각 호의 권한을 가진다.
+                                1. 내부정보와 관련된 각종 서류 및 기록의 제출을 요구하고 열람할 수 있는 권한
+                                2. 회계 또는 감사업무를 담당하는 부서, 그 밖에 내부정보의 생성과 관련이 있는 업무를 담당하는 부서의 임원․직원으로부터 필요한 의견을 청취할 수 있는 권한
+                                ④ 공시책임자는 그 직무를 수행함에 있어 필요한 경우 관련 업무를 담당하는 임원과 협의할 수 있으며, 회사의 비용으로 전문가의 조력을 구할 수 있다.
+                                ⑤ 공시책임자는 내부정보관리제도의 운영 상황을 정기적으로 대표이사에게(또는 이사회에) 보고하여야 한다.
+                                
+                                제6조(공시담당자) ① 대표이사는 공시담당자를 정하여 지체 없이 거래소에 신고하여야 한다. 공시담당자를 변경한 때에도 또한 같다.
+                                ② 공시담당자는 내부정보관리와 관련하여 공시책임자의 지휘를 받으며 다음 각 호의 업무를 수행한다.
+                                1. 내부정보의 수집과 검토 및 공시책임자에 대한 보고
+                                2. 공시의 집행을 위해 필요한 업무
+                                3. 공시 관련 법규의 변경 등 내부정보의 관리를 위해 필요한 사항의 확인 및 공시책임자에 대한 보고
+                                4. 그 밖에 대표이사 또는 공시책임자가 필요하다고 인정한 사항
+                                
+                                제7조(내부정보의 집중) ① 임원 및 각 부서의 장은 다음 각 호의 어느 하나에 해당하는 경우에 적시에 공시책임자에게 그에 관한 정보를 제공하여야 한다.
+                                1. 내부정보가 발생하거나 발생이 예상되는 경우
+                                2. 내부정보 중 이미 공시된 사항을 취소 또는 변경해야 할 사유가 발생하거나 발생이 예상되는 경우
+                                3. 그 밖에 공시책임자의 요구가 있는 경우② 공시책임자 및 대표이사는 제1항에 따른 내부정보의 적시제공을 위해 회사 내의 정보전달 체계를 효율적으로 구축하여야 하며, 필요한 경우 공시의무사항과 관련된 업무의 결재과정에 공시책임자의 협조를 받도록 할 수 있다.
+                                
+                                제7조의2(최대주주 관련 정보의 관리) 공시책임자는 최대주주와 관련된 공시의무사항 및 조회공시 요구사항에 대한 공시업무를 원활히 수행하기 위하여 최대주주에게 관련 사실을 충분히 설명하고 해당 정보를 적시에 전달받을 수 있도록 정보전달 체계를 구축하여야 한다.
+                                
+                                제7조의3(종속회사 내부정보의 집중) ① 회사는 공시의무사항과 관련한 내부정보가 종속회사에서 발생하거나 발생이 예상되는 경우 종속회사로 하여금 그 내용을 회사의 공시책임자 또는 공시담당자에게 즉시 통지하도록 하여야 한다. ② 회사는 제1항에 따른 공시의무사항과 관련된 내부정보를 효율적으로 관리하기 위하여 종속회사에 공시관련 정보를 관리하는 자를 두도록 하며, 이를 지정하거나 변경하는 경우 회사의 공시책임자 또는 공시담당자에게 즉시 통보하도록 하여야 한다.
+                                ③ 회사는 종속회사에게 공시업무에 필요한 범위에서 관련 자료의 제출을 요구할 수 있다.
+                                
+                                제8조(내부정보의 사외제공) ① 임원․직원이 업무상의 이유로 회사의 거래상대방․외부감사인․대리인, 회사와 법률자문․경영자문 등의 자문계약을 체결하고 있는 자 등에 대하여 불가피하게 내부정보를 제공해야 하는 경우 공시책임자에게 이에 관한 사항을 보고하여야 한다.
+                                ② 제1항의 경우 공시책임자는 관련 내부정보의 비밀유지에 관한 계약을 체결하는 등 필요한 조치를 취하여야 한다.
+                                ③ 제1항에 따라 내부정보를 제공함에 있어 공정공시의무가 발생하는 경우에는 이를 지체없이 공시하여야 한다(공시규정 제15조의 적용예외에 해당하는 경우는 제외한다).
+                                </textarea>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <script>
+            $(document).ready(function(){
+                $(".sel").change(function(){
+                    location.href = this.value;
+                });
+            });    
+            </script>
+        </div>
+
+        <footer id="ft">
+            <div class="ft_wrap">
+                <nav class="fnb"><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a></nav>
+                <nav class="snb">
+                    <ul>
+                        <li><a href="" title="네이버"><i class="xi-naver-square"></i></a></li>
+                        <li><a href="" title="페이스북"><i class="xi-facebook-official"></i></a></li>
+                        <li><a href="" title="인스타그램"><i class="xi-instagram"></i></a></li>
+                        <li><a href="" title="카카오톡"><i class="xi-kakaotalk"></i></a></li>
+                    </ul>
+                </nav>
+                <p class="copyright">상호 : 주식회사 앱코 대표이사 : 조수민 개인정보관리책임자 : 펭수 관리자 메일 : webmaster2020@abko.co.kr (제휴, 상담문의 불가)
+                    통신판매신고 : 2020-서울강서-0310 본사 : 서울특별시 강남구 삼청동 20, 7층 (삼청동) 사업자 등록번호 : 000-00-00000
+                    고객센터 : 1644-0844 업무시간 : 09:30~17:00 점심시간 : 12:00~13:00 (공휴일 및 토/일 휴무)</p>
+            </div>
+
+        </footer>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./monami/main/favicon.ico">
+    <link rel="apple-touch-icon" href="./monami/main/favicon.ico">
+    <!--검색(메타) 정보-->
+    <meta name="url" content="http://www.monami.com/">
+    <meta name="title" content="모나미">
+    <meta name="description" content="모나미의 기업정보, 제품정보, 미디어, 커뮤니티">
+    <meta name="keywords" content="모나미, 펜, 마카, 형광펜, 미술용품">
+    <!--오픈 그래프-->
+    <meta property="og:url" content="http://www.monami.com/">
+    <meta property="og:title" content="모나미">
+    <meta property="og:description" content="모나미의 기업정보, 제품정보, 미디어, 커뮤니티">
+    <meta property="og:image" content="./img/logo-square-letter.png">
+    <title>MONAMI</title>
+    <!--기본 플러그인 연결-->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!--폰트 모듈 연결-->
+    <style>
+   @font-face {
+       font-family: 'nam';
+       src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Eoe_Zno_L.woff') format('woff');
+       font-weight: normal;
+       font-style: normal;
+    }
+    </style>
+    <!--웹 아이콘 연결-->
+    <!--XEIcon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!--스타일 초기화 모듈 연결-->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="scommons.css">
+    <style>
+        /* 초기화 */
+        * { margin: 0; padding: 0;}
+        ul { list-style: none; } 
+        a { text-decoration: none; color: #333; }
+        
+        .align, #header .logo:after, #gnb .login:after, #footer .footSns:after, .chkTitList .wrapBlueLine .box:after {
+            content: ""; display: inline-block; height: 100%; vertical-align: middle;}
+        
+        #header { position: relative; background: #fff;}
+        #header .inner { position: relative; max-width: 1400px; margin: 0 auto;}
+        #header .logo { height: 100px; font: 0/0 a;}
+        #header .logo a { display: inline-block; vertical-align: middle;}
+        #header .logo img { height: 52px; border: 0; vertical-align: top;}
+        
+        #gnb { position: absolute; z-index: 100; top: 100px; left: 0; width: 100%; background: #fff;
+            border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
+        
+            /* 여기서부터 로그인 */
+        #gnb .login { position: absolute; z-index: 2; top: -75px; right: 50%; height: 46px; margin-right: -700px;
+            padding: 0 20px; border: 2px solid #eee; border-radius: 46px;}
+        #gnb .login .sign:before { content: ""; display: inline-block; width: 15px; height: 18px; margin-right: 10px;
+            background: url(./images/icon_login.png) no-repeat; vertical-align: -3px;}
+        #gnb .login a { color: #000; font-size: 14px; font-weight: 500;}
+        #gnb .login span:last-child { position: relative; margin-left: 10px; padding-left: 12px;}
+        #gnb .login span:last-child:before { content: ""; position: absolute; top: 8px; left: 0; height: 16px;
+            border-left: 1px solid #ddd;}
+        #gnb .login a { color: #000; font-size: 14px; font-weight: 500;}
+        #gnb .login span:last-child { position: relative; margin-left: 10px; padding-left: 12px;}
+        
+            /* 여기서부터 메뉴 */
+        #gnb .list { position: relative; z-index: 2; max-width: 1400px; margin: 0 auto;}
+        #gnb .list > ul > li:first-child { border-left: 1px solid #ddd;}   /* 선을 그었음 */
+        #gnb .list > ul > li { float: left; width: 14.28%; height: 100%; box-sizing: border-box;} /* float-left로 옆으로 정렬시키고 각 와이드 14퍼만큼 박싱해서 정렬 / 메뉴가 줄어들으시면 이곳을 수정하시면 됩니다.*/
+        li { list-style: none;} /* 한번더 초기화 */
+        #gnb .list > ul > li > a { display: block; background: #fbfbfb; border-right: 1px solid #ddd; text-align: center;
+            color: #000; font-size: 18px; font-weight: 400; line-height: 70px;}     /* 메인메뉴와 서브메뉴를 나누는 구간 */
+        
+        #sub-menu { opacity: 0; visibility: hidden; transition: all 0.15s ease-in; margin: 0 auto; background-color: #fff;}	/* 서브메뉴를 숨기는 */
+        #main-menu:hover #sub-menu { opacity: 1; visibility: visible;}		/* 서브메뉴를 보이게하는 */
+        
+        #gnb .subDepth { display: block !important;}        /* !important를 사용해 다음에 오는 스타일에 영향을 받지않도록 설정했다 */
+        #gnb .subDepth { height: 0;  transition: all .3s; box-sizing: border-box;}    /* ;서브메뉴를 숨기고 on/off 함수를 사용하여 볼수있도록 했다*/
+        #gnb .subDepth > ul { padding: 10px 0 0; border-right: 1px solid #ddd;}
+        #gnb .subDepth li > a { display: block;  margin: 10px 0; padding: 0 30px; color: #666; font-size: 16px;} /* 서브메뉴의 크기를 조정 */
+        
+        a { color: inherit; text-decoration: none;}
+        
+        #gnb .list > ul:after { content: ""; display: block; clear: both;}
+        #gnb:after { content: ""; position: absolute; top: 0; right: 0; left: 0; height: 70px; background: #fbfbfb;}
+        </style>
+</head>
+<body>
+    <div class="wrap">
+        <header id="header" onmouseleave="" class="">
+            <div class="inner">
+                <h1 class="logo"><a href="/"><img src="./images/logo.png" alt="판교예스yes의원"></a></h1>
+                <button type="button" class="btnMenu"><span>MENU</span></button>
+            </div>
+            <nav id="gnb">
+                <div class="login">
+                    <span class="sign"><a href="#">로그인</a></span>
+                        <span><a href="/member/join.html">회원가입</a></span>
+                </div>
+                <div class="list" >
+                    <ul id="main-menu" >
+                        <li class=""><a href="./intro/intro.html#page1">한의원 소개</a>
+                            <div class="subDepth">
+                                <ul id="sub-menu" style="border-left:  1px solid #ddd;">
+                                    <li class=""><a href="new.html#page1">인사말</a></li>
+                                    <li class=""><a href="new.html#page2">진료안내</a></li>
+                                    <li class=""><a href="./intro/intro.html#page3">오시는길</a></li>
+                                    <li class=""><a href="./intro/intro.html#page4">의료진소개</a></li>
+                                    <li class=""><a href="./intro/intro.html#page5">약력</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class=""><a href="./menu1/menu1.html"">진료 과목</a>
+                            <div class="subDepth">
+                                <ul id="sub-menu">
+                                    <li class=""><a href="./menu1/menu1.html#page1">내과</a></li>
+                                    <li class=""><a href="./menu1/menu1.html#page2">정형외과/통증의학과</a></li>
+                                    <li class=""><a href="./menu1/menu1.html#page3">피부과</a></li>
+                                    <li class=""><a href="./menu1/menu1.html#page4">비뇨기과</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class=""><a href="./menu2/menu2.html#page1">비수술 통증치료</a>
+                            <div class="subDepth">
+                                <ul id="sub-menu">
+                                    <li class=""><a href="./menu2/menu2.html#page1">카이로프랙틱</a></li>
+                                    <li class=""><a href="./menu2/menu2.html#page2">인대간화주사</a></li>
+                                    <li class=""><a href="./menu2/menu2.html#page3">신경자극치료</a></li>
+                                    <li class=""><a href="./menu2/menu2.html#page4">체외 충격파</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class=""><a href="./menu3/menu3.html#page1">도수 치료</a>
+                            <div class="subDepth">
+                                <ul id="sub-menu">
+                                    <li class=""><a href="./menu3/menu3.html#page1">비수술 통증치료</a></li>
+                                    <li class=""><a href="./menu3/menu3.html#page2">카이로프랙틱</a></li>
+                                    <li class=""><a href="./menu3/menu3.html#page3">인대강화주사</a></li>
+                                    <li class=""><a href="./menu3/menu3.html#page4">신경자극치료</a></li>
+                                    <li class=""><a href="./menu3/menu3.html#page5">체외 충격파</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class=""><a href="./menu4/menu4.html#page1">초음파 치료</a>
+                            <div class="subDepth">
+                                <ul id="sub-menu">
+                                    <li class=""><a href="./menu4/menu4.html#page1">비수술 통증치료</a></li>
+                                    <li class=""><a href="./menu4/menu4.html#page2">카이로프랙틱</a></li>
+                                    <li class=""><a href="./menu4/menu4.html#page3">인대강화주사</a></li>
+                                    <li class=""><a href="./menu4/menu4.html#page4">신경자극치료</a></li>
+                                    <li class=""><a href="./menu4/menu4.html#page5">체외 충격파</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class=""><a href="./menu5/menu5.html#page1">탈모 치료</a>
+                            <div class="subDepth">
+                                <ul id="sub-menu">
+                                    <li class=""><a href="./menu5/menu5.html#page1">비수술 통증치료</a></li>
+                                    <li class=""><a href="./menu5/menu5.html#page2">카이로프랙틱</a></li>
+                                    <li class=""><a href="./menu5/menu5.html#page3">인대강화주사</a></li>
+                                    <li class=""><a href="./menu5/menu5.html#page4">신경자극치료</a></li>
+                                    <li class=""><a href="./menu5/menu5.html#page5">체외 충격파</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class=""><a href="./board/service.html">안내 및 후기</a>
+                            <div class="subDepth">
+                                <ul id="sub-menu">
+                                    <li class=""><a href="./board/service.html">안내</a></li>
+                                    <li class=""><a href="./board/review.html">치료후기</a></li>
+                                    <li class=""><a href="./board/qna.html">QNA(임시)</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div id="content">
+            <div class="content_wrap">
+                <section class="page" id="page1">
+                    <figure class="sub_ban">
+                        <img src="./monami/group/page_visual8.jpg">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">소나무치료법</h2>
+                            <p class="sub_com"></p><br><br><br><br><br><br>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index.html" class="home">HOME</a>
+                                </li>
+                                <li class="item2">한의원 소개</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel1" class="sel">
+                                        <option value="intro.html#page1" selected>한의원 소개</option>
+                                        <option value="intro.html#page2">의료진 소개</option>
+                                </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap"><br><br>
+                            <p class="tit1">편도</p><br><br>
+
+                            <p class="ptit">"성인의 경우 주로 감염으로 인한 편도염이 발생됩니다"</p> <br>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <p class="stit">검사</p>
+                                    </td>
+                                    <td>
+                                        <img src="./monami/img1.jpg">
+                                    </td>
+                                    <td>
+                                        <img src="./monami/img2.jpg">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="stit">진단</p>
+                                    </td>
+                                    <td>
+                                        <img src="./monami/img1.jpg">
+                                    </td>
+                                    <td>
+                                        <img src="./monami/img2.jpg">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="stit">치료</p>
+                                    </td>
+                                    <td>
+                                        <img src="./monami/img1.jpg">
+                                    </td>
+                                    <td>
+                                        <img src="./monami/img2.jpg">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="stit">편도절제술</p>
+                                    </td>
+                                    <td>
+                                        <img src="./monami/img1.jpg">
+                                    </td>
+                                    <td>
+                                        <img src="./monami/img2.jpg">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page2">
+                    <figure class="sub_ban">
+                        <img src="./monami/group/page_visual8.jpg"><br>
+                        <div class="tit_box">
+                            <h2 class="sub_tit">산업용 맞춤 제품개발</h2>
+                            <p class="sub_com">맞춤 프로모션 솔루션과 제품을 제공합니다.</p><br><br><br><br><br><br>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index.html" class="home">HOME</a>
+                                </li>
+                                <li class="item2">산업용 맞춤 제품개발</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel2" class="sel">
+                                        <option value="group.html#page1">기업 및 단체 구매</option>
+                                        <option value="group.html#page2" selected>산업용 맞춤 제품개발</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <h1 class="tit1">PRODUCT <span class="redtext">CUSTOMIZED</span></h1><br><br>
+                            <p class="ptit">1. 사업 소개</p> <br>
+                            <p>종합 문구를 선도하는 모나미는 가정, 사무실을 넘어 산업현장까지 창의성과 간결함으로 효율성을 향상시키는데 주도적인 역할을 하고 있으며,<br>
+                                특히 산업현장(자동차/섬유/선박 등)에서 필요한 제품을 용도에 맞춰 다양한 옵션으로 고객이 원하는 제품을 맞춤 개발하고 있습니다.</p><br>
+                            <img src="./monami/group/1-2.png"><br><br><br>
+                            <p class="ptit">2. 산업용 OEM 제품 개발 프로세스</p><br>
+                            <img src="./monami/group/1-3.png"><br><br><br>
+                            <p class="ptit">3. 산업용 OEM 제품</p> <br>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="./monami/group/1-4.png">
+                                    </td>
+                                    <td>
+                                        <img src="./monami/group/1-5.png">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>프로 페인트 마카</strong></td>
+                                    <td><strong>스틸 마카 CLIP & TWIN</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <br>
+                                        새로운 기술을 적용한 저자극성 알코올 타입 잉크 (Xylene-Free)<br>
+                                        속건성으로 작업이 편리<br>
+                                        내수성, 내광성이 우수하여 외부환경에 적합<br>
+                                        금속, 나무, 플라스틱, 유리 등 다양하고 거친 표면 및 기름진 표면에도 사용 가능<br>
+                                        플라스틱 바디와 클릭 적용으로 휴대가 편리<br>
+                                        내구성이 우수한 닙을 사용하여 쉽게 마모되지 않고 장시간 사용 가능
+                                    </td>
+                                    <td>
+                                        <br>
+                                        오일 묻은 금속재질에 사용 가능한 전문 마카<br>
+                                        속건성으로 표기의 효율성 높음<br>
+                                        물 또는 알칼리 수용액으로 흔적 없이 쉽게 세척됨<br>
+                                        자동차, 선박 등 탈지공정이 있는 산업에서 사용<br>
+                                        새로운 기술을 적용한 저자극성 알코올 타입 잉크 (Xylene-Free)<br>
+                                        클립을 추가하여 휴대성 강화(CLIP)<br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <br><img src="./monami/group/1-6.png">
+                                    </td>
+                                    <td>
+                                        <br><img src="./monami/group/1-7.png">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>프로 유성매직</strong></td>
+                                    <td><strong>고순도 마카500</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <br>
+                                        사용자의 편의를 고려한 미끄럼 방지 고무그립으로 장갑을 낀 상태로도 편리하게 사용<br>
+                                        금속, 나무, 플라스틱, 유리 등 다양하고 거친 표면에 사용 가능<br>
+                                        2009년도 레드닷 디자인 어워드 수상<br>
+                                        기름진 표면에서도 사용 가능
+                                    </td>
+                                    <td>
+                                        원자력 발전소, 항공기 부품, 조선소 등 금속부식에 민감한 산업에 적합<br>
+                                        황 (S), 할로 ( CI, Br) 등 13개 규제 기준에 적합한 초 고순도 잉크<br>
+                                        잉크 Lot에 따른 규제물질 공인 인증 성적서 발급 가능
+                                    </td>
+                                </tr>
+                            </table>
+                            <img src="./monami/group/1-8.png">
+                            <img src="./monami/group/1-9.png">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <script>
+            $(document).ready(function(){
+                $(".sel").change(function(){
+                    location.href = this.value;
+                });
+            });    
+            </script>
+        </div>    
+        <footer id="ft">
+            <div class="ft_wrap">
+                <nav class="fnb">
+                    <a href="">회사소개</a>
+                    <a href="">개인정보처리방침</a>
+                    <a href="">이메일무단수집거부</a>
+                </nav>
+                <nav class="snb">
+                    <ul>
+                        <li class="sns1">
+                            <a href="sns.html#page1" title="유튜브"><i class="xi-youtube-play"></i></a>
+                        </li>
+                        <li class="sns2">
+                            <a href="sns.html#page2" title="페이스북"><i class="xi-facebook"></i></a>
+                        </li>
+                        <li class="sns3">
+                            <a href="sns.html#page3" title="네이버 포스트"><i class="xi-naver"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright">ADDRESS:경기도 용인시 수지구 손곡로17 | TEL:031-216-0153 | FAX:031-270-5154<br>Copyright © 2017 MONAMI.CO.,LTD. ALL RIGHTS RESERVED</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

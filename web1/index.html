@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./monami/main/favicon.ico">
+    <link rel="apple-touch-icon" href="./monami/main/favicon.ico">
+    <!--검색(메타) 정보-->
+    <meta name="url" content="http://www.monami.com/">
+    <meta name="title" content="모나미">
+    <meta name="description" content="모나미의 기업정보, 제품정보, 미디어, 커뮤니티">
+    <meta name="keywords" content="모나미, 펜, 마카, 형광펜, 미술용품">
+    <!--오픈 그래프-->
+    <meta property="og:url" content="http://www.monami.com/">
+    <meta property="og:title" content="모나미">
+    <meta property="og:description" content="모나미의 기업정보, 제품정보, 미디어, 커뮤니티">
+    <meta property="og:image" content="./img/logo-square-letter.png">
+    <title>MONAMI</title>
+    <!--기본 플러그인 연결-->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!--폰트 모듈 연결-->
+    <style>
+   @font-face {
+       font-family: 'nam';
+       src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Eoe_Zno_L.woff') format('woff');
+       font-weight: normal;
+       font-style: normal;
+    }
+    </style>
+    <!--웹 아이콘 연결-->
+    <!--XEIcon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!--스타일 초기화 모듈 연결-->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <style>
+     /*내게 필요한 스타일 초기화*/
+    * {margin:0; padding:0;}
+    body, html { font-family : 'nam', sans-serif; width:100%; }
+    ul { list-style : none; }
+    a { text-decoration: none; color: #333; }
+    .vs_tit {font-family: 'nam';}
+    .vs_com { font-family: 'nam', sans-serif;}
+    i[class*='xi'] { font-size:28px; color:#000; }
+    i[class*='xi']:hover { color :rgba(255, 0, 0, 0.514); }
+    .wrap { clear:both; width:100%; }
+
+    /* 헤더 */
+    #hd { clear:both; width: 100%; height:90px;}    /*height 확인*/
+    .hd_wrap{ clear:both; width:1280px; margin: 0 auto; }
+    .logo { display:block; width : 180px; float : left; }
+    .logo img { display:block; width:100% }
+    #gnb { float:left; }
+    #gnb > ul > li { float:left; padding-left:50px; padding-right: 20px; 
+    position:relative; }
+    #gnb > ul > li > span { display:block; line-height: 100px; cursor:pointer;}
+    #gnb li .sub { display:none; position:absolute; left:10px; top:100px; z-index: 999;
+    padding-left: 10px; width: 160px; height: 230px; background-color: #eee; ;}
+    #gnb li .sub li { line-height: 38px;}
+    #gnb ul li .sub li:hover a { color:blue; }
+    #gnb ul li:hover .sub { display:block; }
+    #gnb ul li:hover span { color : deepskyblue; }
+    
+    #tnb { float:right; padding-top: 10px; padding-bottom: 14px; margin-top: 30px;}
+    #tnb a { font-size: 0.85em; padding-left: 32px;}
+    #tnb a:hover  {color:rgb(252, 136, 155); text-decoration: underline;}
+    #content { clear:both; width: 100%;}
+
+    /* 비주얼 슬라이더 */
+    #vs { width: 100%; overflow:hidden; }
+    .img_box { width:400%}
+    .img_box li { float:left; width:25%; position: relative;}
+    .img_box li a { display:block;  }
+    .img_box li a img { display: block; width: 100%; height: auto; }
+    .img_box .tit_box { position: absolute; top: 50px; left: 50px; color:#fff;
+    text-shadow: 1px 1px 1px #333; padding-left: 40px; z-index:30;}
+    .vs_tit { font-size: 32px; line-height: 1.2;}
+    .vs_com { font-size: 16px; padding-top: 35px;}
+    .btn_group { position:absolute; bottom:0px; left:90px; z-index:40; }
+    .btn_group button { display:block; width:80px; height: 80px; float: left;
+    background-color:rgba(0,0,0,0.6); border:none; outline:none; color:#fff;}
+    .btn_group button i[class*='xi'] { color: #fff; }
+    .btn_group button:hover i[class*='xi'] { cursor:pointer; color:rgb(175, 252, 144); }
+
+    /* 그리드 박스 */
+    .grid_box { clear:both; width:100%; }
+    .grid_wrap { clear:both; width:100%; }
+    .grid_wrap li { float:left; height:16.66667vm;
+    background-position: center center;}
+    .grid_wrap li.item1 { background-color: #fff7ee; } 
+    .grid_wrap li.item2 { background-color: #fff7ee; }
+    .grid_wrap li.item3 { background-color: #fff7ee; }
+    .grid_wrap li.item4 { background-image: url("./monami/main/main/grid2.png");}
+    .grid_wrap li.item5 { background-image: url("./monami/main/main/grid3.png");}
+    .grid_wrap li.item6 { background-color: #fff7ee; } 
+
+    /* 그리드 */
+    .col1 { width: 8.33333%; }
+    .col2 { width: 16.66667%; }
+    .col3 { width: 25%; }
+    .col4 { width: 33.33333%; }
+    .col5 { width: 41.66667%; }
+    .col6 { width: 50%; }
+    /* 확인 */
+    .grid_wrap li a { display:block; padding: 28px; }
+    .col_tit, .col_com { color:#000; }
+    .col_tit { padding-top: 18px; }
+    .col_tit.w , .col_com.w { color:#fff; text-shadow:1px 1px 1px #333; }
+    .col_tit.w { padding-top: 0; }
+    .arrow { display:block; margin-top: 50px; }
+    .arrow:before { content:""; display:block; width:2px; height:5px; 
+    border-bottom:3px solid #555; float:left; transition:0.4s; }
+    .arrow:after { content:""; display:block; width: 30px; height: 8px; 
+    background-image: url("./img/newsletter_arrow_black.png"); float:left; }
+    .col_com { font-size:12px; padding-top: 20px; font-weight: 200;  }
+    .grid_wrap li:hover a .arrow:before { width: 18px;  }
+
+    /* 푸터 */
+    #ft { clear:both; width: 100%; padding: top 20px; border-top:3px solid #f1f1f1;
+    height: 100px; background-color: #fffcdcc0;}
+    .ft_wrap { clear:both; width:1280px; margin:0 auto;}
+    .fnb {float:left}
+    .fnb a { display:block; float:left; margin:14px; 
+        margin-left: 0; margin-right: 28px;  font-size:12px; }
+    .fnb a:after { content:"|"; padding-left: 28px; }
+    .fnb a:last-child::after { content:""; }
+    .snb { float:right; }
+    .snb ul li {float:left; margin: left 28px;}
+    .copyright { clear:both; padding-bottom: 28px; font-size : 12px;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header id="hd">
+            <div class="hd_wrap">
+                <a href="index.html" class="logo">
+                    <img src="./monami/logo.svg" alt="로고">
+                </a>
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <span>모나미소개</span>
+                            <ul class="sub">
+                                <li><a href="company.html#page1">CEO 메시지</a></li>
+                                <li><a href="company.html#page2">회사정보</a></li>
+                                <li><a href="company.html#page3">회사연혁</a></li>
+                                <li><a href="company.html#page4">CI</a></li>
+                                <li><a href="company.html#page5">찾아오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>모나미제품</span>
+                            <ul class="sub">
+                                <li><a href="product.html#page1">펜</a></li>
+                                <li><a href="product.html#page2">마카</a></li>
+                                <li><a href="product.html#page3">형광펜</a></li>
+                                <li><a href="product.html#page4">미술용품</a></li>
+                                <li><a href="product.html#page5">카탈로그</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>NEWS & VIDEO</span>
+                            <ul class="sub">
+                                <li><a href="news.html#page1">보도자료</a></li>
+                                <li><a href="news.html#page2">동영상자료</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>고객지원</span>
+                            <ul class="sub">
+                                <li><a href="sup.html#page1">자주묻는질문</a></li>
+                                <li><a href="sup.html#page2">문의하기</a></li>
+                                <li><a href="sup.html#page3">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>기업구매 / 개발</span>
+                            <ul class="sub">
+                                <li><a href="group.html#page1">기업 및 단체 구매</a></li>
+                                <li><a href="group.html#page2">산업용 맞춤 제품개발</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <p id="tnb">
+                    <a href="index.html">HOME</a>
+                    <a href="top.html#page2">SITE MAP</a>
+                    <a href="top.html#page3">CONTACT US</a>
+                </p>
+            </div>
+        </header>
+        <div id="content">
+            <figure id="vs">
+                <ul class="img_box">
+                    <li>
+                        <a href="">
+                            <img src="./monami/main/picc/picc1.png" alt="펜의 기록" class="pic1">
+                            <div class="tit_box">
+                                <h2 class="vs_tit">어쩌면 삶은<br>인생이라는 종이 위에<br>써 내려가는<br>펜의 기록 같습니다.</h2>
+                                <p class="vs_com">그중에서도 지우고 싶지 않은 기록이 있습니다.<br>모나미는 언제나 당신의 행복한 기록과 함께 합니다.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./monami/main/picc/picc2.png" alt="NEW ARRIVALS" class="pic2">
+                            <div class="tit_box">
+                                <h2 class="vs_tit">NEW<br>ARRIVALS</h2>
+                                <p class="vs_com">가장 먼저 만나는 설레는 기다림</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./monami/main/picc/picc3.png" alt="ziq" class="pic3">
+                            <div class="tit_box">
+                                <h2 class="vs_tit">평범합니다.</h2>
+                                <p class="vs_com">그래서 특별합니다.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./monami/main/picc/picc4.png" alt="zenis" class="pic4">
+                            <div class="tit_box">
+                                <h2 class="vs_tit">당신의 이야기를 들려주세요</h2>
+                                <p class="vs_com">지금 바로</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="btn_group">
+                    <button class="prev"><i class="xi-arrow-left"></i></button>
+                    <button class="next_btn"><i class="xi-arrow-right"></i></button>
+                </div>
+                <div class="btn_group">
+                    <button class="prev_btn"><i class="xi-arrow-left"></i></button>
+                    <button class="next_btn"><i class="xi-arrow-right"></i></button>
+                </div>
+                <script>
+                $(document).ready(function(){
+                    wd = $(window).width();
+                    var intv = setInterval(function(){
+                        ani1();
+                    }, 3000);
+                    function ani1(){
+                        $(".img_box").not(":animated").animate({"margin-left":-wd+"px"}, 600, function(){
+                            $(".img_box li").eq(0).appendTo($(".img_box"));
+                            $(".img_box").css("margin-left","0px");
+                        });
+                    }
+                    function ani2(){
+                        $(".img_box").css("margin-left",-wd+"px");
+                        $(".img_box li:last-child").prependTo($(".img_box"));
+                        $(".img_box").not(":animated").animate({"margin-left":"0px"}, 600);
+                    }
+                    $(".btn_group .next_btn").click(function(){
+                        clearInterval(intv);
+                        ani1();
+                        intv = setInterval(function(){ ani1(); }, 3000);
+                    });
+                    $(".btn_group .prev_btn").click(function(){
+                        clearInterval(intv);
+                        ani2();
+                        intv = setInterval(function(){ ani1(); }, 3000);
+                    });
+                });    
+                </script>
+            </figure>
+            </div>
+            <div class="grid_box">
+                <ul class="grid_wrap">
+                    <li class="col2 item1">
+                        <a href="">
+                            <h3 class="col_tit"></h3>
+                            <p class="col_com"></p>
+                            <span class="arrow"></span>
+                        </a>
+                    </li>
+                    <li class="col2 item2">
+                        <a href="gb.html#page2">
+                            <h3 class="col_tit"></h3>
+                            <p class="col_com">아날로그 감성 담아 엘라고와 콜라보 제품 출시</p>
+                            <span class="arrow"></span>
+                        </a>
+                    </li>
+                    <li class="col2 item3">
+                        <a href="">
+                        <h3 class="col_tit"></h3>
+                        <p class="col_com"></p>
+                        <span class="arrow"></span>
+                        </a>
+                     </li>
+                    <li class="col2 item4">
+                        <a href="gb.html#page4">
+                            <h3 class="col_tit">INQUIR</h3>
+                            <p class="col_com"></p>
+                            <span class="arrow"></span>
+                        </a>
+                    </li>
+                    <li class="col2 item5">
+                        <a href="gb.html#page5">
+                            <h3 class="col_tit">FAMILY SHOP</h3>
+                            <p class="col_com"></p>
+                            <span class="arrow"></span>
+                        </a>
+                </li><li class="col2 item6">
+                    <a href="">
+                        <h3 class="col_tit"></h3>
+                        <p class="col_com"></p>
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+                </ul>
+            </div>
+        </div>
+        <footer id="ft">
+            <div class="ft_wrap">
+                <nav class="fnb">
+                    <a href="ft.html#page1">회사소개</a>
+                    <a href="ft.html#page2">개인정보처리방침</a>
+                    <a href="ft.html#page3">이메일무단수집거부</a>
+                </nav>
+                <nav class="snb">
+                    <ul>
+                        <li class="sns1">
+                            <a href="sns.html#page1" title="유튜브"><i class="xi-youtube-play"></i></a>
+                        </li>
+                        <li class="sns2">
+                            <a href="sns.html#page2" title="페이스북"><i class="xi-facebook"></i></a>
+                        </li>
+                        <li class="sns3">
+                            <a href="sns.html#page3" title="네이버 포스트"><i class="xi-naver"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright">ADDRESS:경기도 용인시 수지구 손곡로17 | TEL:031-216-0153 | FAX:031-270-5154<br>Copyright © 2017 MONAMI.CO.,LTD. ALL RIGHTS RESERVED</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

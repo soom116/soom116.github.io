@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./monami/main/favicon.ico">
+    <link rel="apple-touch-icon" href="./monami/main/favicon.ico">
+    <!--검색(메타) 정보-->
+    <meta name="url" content="http://www.monami.com/">
+    <meta name="title" content="모나미">
+    <meta name="description" content="모나미의 기업정보, 제품정보, 미디어, 커뮤니티">
+    <meta name="keywords" content="모나미, 펜, 마카, 형광펜, 미술용품">
+    <!--오픈 그래프-->
+    <meta property="og:url" content="http://www.monami.com/">
+    <meta property="og:title" content="모나미">
+    <meta property="og:description" content="모나미의 기업정보, 제품정보, 미디어, 커뮤니티">
+    <meta property="og:image" content="./img/logo-square-letter.png">
+    <title>MONAMI</title>
+    <!--기본 플러그인 연결-->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!--폰트 모듈 연결-->
+    <style>
+   @font-face {
+       font-family: 'nam';
+       src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Eoe_Zno_L.woff') format('woff');
+       font-weight: normal;
+       font-style: normal;
+    }
+    </style>
+    <!--웹 아이콘 연결-->
+    <!--XEIcon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!--스타일 초기화 모듈 연결-->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="sub_common.css">
+    <style>
+    .page { clear:both; min-height:100vh; display:none; padding-top: 100px; }
+    .page:target { display:block; }
+    #hd { position:fixed; top: 0; left: 0; height:100px; z-index:999;
+    background-color: rgba(255,255,255,0.75); }
+    
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header id="hd">
+            <div class="hd_wrap">
+                <a href="index.html" class="logo">
+                    <img src="./monami/logo.svg" alt="로고">
+                </a>
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <span>모나미소개</span>
+                            <ul class="sub">
+                                <li><a href="company.html#page1">CEO 메시지</a></li>
+                                <li><a href="company.html#page2">회사정보</a></li>
+                                <li><a href="company.html#page3">회사연혁</a></li>
+                                <li><a href="company.html#page4">CI</a></li>
+                                <li><a href="company.html#page5">찾아오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>모나미제품</span>
+                            <ul class="sub">
+                                <li><a href="product.html#page1">펜</a></li>
+                                <li><a href="product.html#page2">마카</a></li>
+                                <li><a href="product.html#page3">형광펜</a></li>
+                                <li><a href="product.html#page4">미술용품</a></li>
+                                <li><a href="product.html#page5">카탈로그</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>NEWS & VIDEO</span>
+                            <ul class="sub">
+                                <li><a href="news.html#page1">보도자료</a></li>
+                                <li><a href="news.html#page2">동영상자료</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>고객지원</span>
+                            <ul class="sub">
+                                <li><a href="sup.html#page1">자주묻는질문</a></li>
+                                <li><a href="sup.html#page2">문의하기</a></li>
+                                <li><a href="sup.html#page3">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>기업구매 / 개발</span>
+                            <ul class="sub">
+                                <li><a href="group.html#page1">기업 및 단체 구매</a></li>
+                                <li><a href="group.html#page2">산업용 맞춤 제품개발</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <p id="tnb">
+                    <a href="">HOME</a>
+                    <a href="">SITE MAP</a>
+                    <a href="">CONTACT US</a>
+                </p>
+            </div>
+        </header>
+        <div id="content">
+            <div class="content_wrap">
+                <section class="page" id="page1">
+                    <figure class="sub_ban">
+                        <img src="./monami/product/pen1/page_visual2.jpg">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">모나미제품</h2>
+                            <p class="sub_com">모나미는 당신의 행복한 기록과 늘 함께 합니다.</p><br><br><br><br><br><br>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">모나미소개</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel1" class="sel">
+                                        <option value="product.html#page1" selected>펜</option>
+                                        <option value="product.html#page2">마카</option>
+                                        <option value="product.html#page3">형광펜</option>
+                                        <option value="product.html#page4">미술용품</option>
+                                        <option value="product.html#page5">카탈로그</option>
+                                </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <h1 class="tit1">PRODUCT <span class="redtext">INFO</span></h1><br><br>
+                            <p>내용</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page2">
+                    <figure class="sub_ban">
+                        <img src="./monami/product/pen1/page_visual2.jpg" alt="마카"><br>
+                        <div class="tit_box">
+                            <h2 class="sub_tit">모나미제품</h2>
+                            <p class="sub_com">모나미는 당신의 행복한 기록과 늘 함께 합니다.</p><br><br><br><br><br><br>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">모나미제품</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel2" class="sel">
+                                        <option value="product.html#page1">펜</option>
+                                        <option value="product.html#page2" selected>마카</option>
+                                        <option value="product.html#page3">형광펜</option>
+                                        <option value="product.html#page4">미술용품</option>
+                                        <option value="product.html#page5">카탈로그</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <h1 class="tit1">PRODUCT <span class="redtext">INFO</span></h1><br><br>
+                            <P>내용</P>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page3">
+                    <figure class="sub_ban">
+                        <img src="./monami/product/pen1/page_visual2.jpg" alt="마카"><br>
+                        <div class="tit_box">
+                            <h2 class="sub_tit">모나미제품</h2>
+                            <p class="sub_com">모나미는 당신의 행복한 기록과 늘 함께 합니다.</p><br><br><br><br><br><br>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">모나미제품</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel3" class="sel">
+                                        <option value="product.html#page1">펜</option>
+                                        <option value="product.html#page2">마카</option>
+                                        <option value="product.html#page3" selected>형광펜</option>
+                                        <option value="product.html#page4">미술용품</option>
+                                        <option value="product.html#page5">카탈로그</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <h1 class="tit1">PRODUCT <span class="redtext">INFO</span></h1><br><br>
+                            <P>내용</P>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page4">
+                    <figure class="sub_ban">
+                        <img src="./monami/product/pen1/page_visual2.jpg" alt="마카"><br>
+                        <div class="tit_box">
+                            <h2 class="sub_tit">모나미제품</h2>
+                            <p class="sub_com">모나미는 당신의 행복한 기록과 늘 함께 합니다.</p><br><br><br><br><br><br>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">모나미제품</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel4" class="sel">
+                                        <option value="product.html#page1">펜</option>
+                                        <option value="product.html#page2">마카</option>
+                                        <option value="product.html#page3">형광펜</option>
+                                        <option value="product.html#page4" selected>미술용품</option>
+                                        <option value="product.html#page5">카탈로그</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <h1 class="tit1">PRODUCT <span class="redtext">INFO</span></h1><br><br>
+                            <P>내용</P>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page5">
+                    <figure class="sub_ban">
+                        <img src="./monami/product/pen1/page_visual2.jpg" alt="마카"><br>
+                        <div class="tit_box">
+                            <h2 class="sub_tit">모나미제품</h2>
+                            <p class="sub_com">모나미는 당신의 행복한 기록과 늘 함께 합니다.</p><br><br><br><br><br><br>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">모나미제품</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel5" class="sel">
+                                        <option value="product.html#page1">펜</option>
+                                        <option value="product.html#page2">마카</option>
+                                        <option value="product.html#page3">형광펜</option>
+                                        <option value="product.html#page4">미술용품</option>
+                                        <option value="product.html#page5" selected>카탈로그</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <h1 class="tit1">PRODUCT <span class="redtext">INFO</span></h1><br><br>
+                            <P>내용</P>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <script>
+            $(document).ready(function(){
+                $(".sel").change(function(){
+                    location.href = this.value;
+                });
+            });    
+            </script>
+        </div>    
+        <footer id="ft">
+            <div class="ft_wrap">
+                <nav class="fnb">
+                    <a href="">회사소개</a>
+                    <a href="">개인정보처리방침</a>
+                    <a href="">이메일무단수집거부</a>
+                </nav>
+                <nav class="snb">
+                    <ul>
+                        <li class="sns1">
+                            <a href="sns.html#page1" title="유튜브"><i class="xi-youtube-play"></i></a>
+                        </li>
+                        <li class="sns2">
+                            <a href="sns.html#page2" title="페이스북"><i class="xi-facebook"></i></a>
+                        </li>
+                        <li class="sns3">
+                            <a href="sns.html#page3" title="네이버 포스트"><i class="xi-naver"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright">ADDRESS:경기도 용인시 수지구 손곡로17 | TEL:031-216-0153 | FAX:031-270-5154<br>Copyright © 2017 MONAMI.CO.,LTD. ALL RIGHTS RESERVED</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

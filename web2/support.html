@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images2/favicon.ico">
+    <link rel="apple-touch-icon" href="images2/favicon.ico">
+    <!-- 검색(메타)엔진정보 -->
+    <meta name="ulr" content="https://www.abko12.co.kr">
+    <meta name="title" content="앱코">
+    <meta name="description" content="../images2/bx_loader.gif">
+    <meta name="keyword" content="앱코, 게임단, 상품">
+    <!-- 오픈 그래프 -->
+    <meta property="og:ulr" content="https://www.abko12.co.kr">
+    <meta property="og:title" content="앱코">
+    <meta property="og:description" content="앱코 기업정보, 제품, 게임단">
+    <meta property="og:img" content="../images2/bx_loader.gif">
+
+    <title>Abko</title>
+    <!-- 기본 플러그 연결 -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!-- 웹폰트/폰트 모듈 연결 -->
+    <!-- 구글폰트 복붙-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <link  href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/Yeongdo-Rg.woff">
+    
+    
+    <!-- 웹아이콘 연결 -->
+    <!-- XEicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- 스타일 초기화 모듈 연결 -->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="sub_common.css">
+    <!-- <link rel="stylesheet" href="./css/reset.css"> 또다른 방법 -->
+    <style>
+        /* 눈누폰트 복붙 */
+    @font-face {
+        font-family: 'yung';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/Yeongdo-Rg.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }</style>
+    <style>
+        /* 아래의 네줄은 기본 초기화셋팅*/
+
+ #content {clear: both; width: 100%;}
+ /*바디*/
+ <style>
+ /* 콘텐츠 영역 공통 */
+ #content { clear:both; width: 100%; }
+    .page { clear:both; width: 100%; display:none; }
+    .sub_ban { clear:both; width: 100%; }
+    .sub_ban img { display:block; width: 100%; }
+    .bread_box { clear:both; width: 100%; border-top:2px solid #eee; 
+    border-bottom:2px solid #eee; padding-bottom: 10px; }
+    .bread_wrap { clear: both; width: 1200px; margin: 0 auto; height: 40px; 
+    padding-top: 1em; padding-bottom: 1em; line-height: 40px; font-size:18px; }
+    .bread_wrap a { padding-right: 10px; }
+    .bread_wrap a:after { content:">"; padding-left: 10px;  }
+    .sel option {clear: both; font-size:18px;}
+    .con_wrap { clear:both; width: 100%; }
+    .page_wrap { clear:both; width: 1200px; margin: 0 auto; }
+    .page_tit { font-size:40px; line-height: 2.4; padding-top: 1em; 
+    padding-bottom: 0.5em; }
+    .page:target { display:block; }
+   
+    /* 내부 콘텐츠 테이블 목록1 */
+    .sec_tit { text-align: center; font-size: 30px; line-height: 2.4; padding-top: 1em; 
+    padding-bottom: 0.25em; }
+    .tb1 {clear: both; display:table; width: 800px; margin: 0 auto; border-collapse: collapse; 
+    margin-bottom: 50px; }
+    .tb1 tr { display:table-row; }
+    .tb1 th, .tb1 td { display:table-cell; line-height:32px; border-bottom:1px solid #333;
+    font-size:14px;  }
+    .tb1 th { border-top:2px solid #333; background-color: #eee; }    
+    .tb1 .c1 { width:80px; text-align:center; }
+    .tb1 .c3, .tb1 .c4 { width:100px; text-align:center; border-left:1px solid #333; }
+    .tb1 .c2 { border-left:1px solid #333; }
+    .tb1 td.c2 { text-align: left;  }
+    .tb1 td.c2 a { padding-left:1em; }
+    .tb1 td.c2 a:hover { color:deepskyblue; font-weight:bold; }
+    .tb1 tr:last-child td { border-bottom:2px solid #333; }
+</style>
+<style>
+    .tit_box { font-size: x-large;}
+    .sub_tit, .sub_com { color:#000; }
+    .sub_tit { font-size: 30px;}
+    .sub_tit.w , .col_com.w { color:#fff; text-shadow:1px 1px 1px #333; }
+    .sub_tit.w { padding-top: 0; }
+    .sub_com{font-size: 30px;}
+    .pom {float: left;  font-size: 30px;}
+    .pom img {size: 10px;}
+    </style>    
+</head>
+<body>
+    <div class="wrap">
+        <header id="hd">
+            <div class="hd_wrap">
+                <a href="index.html" class="logo">
+                    <img src="https://www.abko.co.kr/img/main/logo_red.png" alt=""></a>
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <span>회사소개</span>
+                            <ul class="sub" id="page_wrap">
+                                <li><a href="company.html#page1">ABKO</a></li>
+                                <li><a href="company.html#page2">CEO인사말</a></li>
+                                <li><a href="company.html#page3">CI.BI</a></li>
+                                <li><a href="company.html#page4">오시는 길</a></li>
+                                <li><a href="company.html#page5">연혁</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>브랜드</span>
+                            <ul class="sub">
+                                <li><a href="brand.html#page1">ABKO</a></li>
+                                <li><a href="brand.html#page2">ABKOlife</a></li>
+                                <li><a href="brand.html#page3">CQX</a></li>
+                                <li><a href="brand.html#page4">NCOER</a></li>
+                                <li><a href="brand.html#page5">ABKONCORE</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>공지사항</span>
+                            <ul class="sub">
+                                <li><a href="notice.html#page1">공지사항</a></li>
+                                <li><a href="notice.html#page2">이벤트</a></li>
+                                <li><a href="notice.html#page3">뉴스</a></li>
+                                <li><a href="notice.html#page4">게임단</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>고객지원</span>
+                            <ul class="sub">
+                                <li><a href="support.html#page1">게시판</a></li>
+                                <li><a href="support.html#page2">자료실</a></li>
+                                <li><a href="support.html#page3">자주 묻는 질문</a></li>
+                                <li><a href="support.html#page4">대리점 정보</a></li>
+                                <li><a href="support.html#page5">SHOP</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>투자정보</span>
+                            <ul class="sub">
+                                <li><a href="financial.html#page1">재무정보</a></li>
+                                <li><a href="financial.html#page2">주가정보</a></li>
+                                <li><a href="financial.html#page3">공시/공고</a></li>
+                                <li><a href="financial.html#page4">내부정보관리규정</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <p id="tnb">
+                    <a href="">English</a>
+                    <a href="">China</a>
+                    <a href="">Spanish</a>
+                </p>
+            </div>
+        </header>
+        <div id="content">
+            <div class="content_wrap">
+                <section class="page" id="page1">
+                    <figure class="sub_ban">
+                        <img src="https://www.abko.co.kr/img/sub/sub_visual_04.png" alt="고객지원">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">게시판</h2>
+                            <p class="sub_com"></p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index.html" class="home">HOME</a>
+                                </li>
+                                <li class="item2">고객지원</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel1" class="sel">
+                                        <option value="support.html#page1" selected>게시판</option>
+                                        <option value="support.html#page2">자료실</option>
+                                        <option value="support.html#page3">자주 묻는 질문</option>
+                                        <option value="support.html#page4">대리점 정보</option>
+                                        <option value="support.html#page5">SHOP</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <p>다양한 앱코의 소식들을 볼 수 있는 게시판.</p>
+
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page2">
+                    <figure class="sub_ban">
+                        <img src="https://www.abko.co.kr/img/sub/sub_visual_04.png" alt="자료실">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">자료실</h2>
+                            <p class="sub_com"></p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index.html" class="home">HOME</a>
+                                </li>
+                                <li class="item2">고객지원</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel2" class="sel">
+                                        <option value="support.html#page1">게시판</option>
+                                        <option value="support.html#page2" selected>자료실</option>
+                                        <option value="support.html#page3">자주 묻는 질문</option>
+                                        <option value="support.html#page4">대리점 정보</option>
+                                        <option value="support.html#page5">SHOP</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <p>앱코의 다양한 자료들을 볼 수 있습니다.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page3">
+                    <figure class="sub_ban">
+                        <img src="https://www.abko.co.kr/img/sub/sub_visual_04.png" alt="자주 묻는 질문">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">자주 묻는 질문</h2>
+                            <p class="sub_com"></p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index.html" class="home">HOME</a>
+                                </li>
+                                <li class="item2">고객지원</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel3" class="sel">
+                                        <option value="support.html#page1">게시판</option>
+                                        <option value="support.html#page2">자료실</option>
+                                        <option value="support.html#page3" selected>자주 묻는 질문</option>
+                                        <option value="support.html#page4">대리점 정보</option>
+                                        <option value="support.html#page5">SHOP</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <p>고객님이 자주 물어보시는 질문과 대답.</p>
+                            <table class="tb1">
+                                <thead>
+                                    <tr>
+                                        <th class="c1">번호</th>
+                                        <th class="c2">제목</th>
+                                        <th class="c3">작성자</th>
+                                        <th class="c4">작성일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="c1">4</td>
+                                        <td class="c2"><a href="">글 제목4</a></td>
+                                        <td class="c3">관리자</td>
+                                        <td class="c4">2022-05-02</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="c1">3</td>
+                                        <td class="c2"><a href="">글 제목3</a></td>
+                                        <td class="c3">관리자</td>
+                                        <td class="c4">2022-05-02</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="c1">2</td>
+                                        <td class="c2"><a href="">글 제목2</a></td>
+                                        <td class="c3">관리자</td>
+                                        <td class="c4">2022-05-02</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="c1">1</td>
+                                        <td class="c2"><a href="">글 제목1</a></td>
+                                        <td class="c3">관리자</td>
+                                        <td class="c4">2022-05-02</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="page_wrap">
+                            <h3 class="sec_tit">테이블2 제목</h3>
+                            <table class="tb2">
+                                <tbody>
+                                    <tr>
+                                        <th class="d1">항목명</th>
+                                        <td class="d2">항목데이터</td>
+                                        <th class="d3">항목명</th>
+                                        <td class="d4">항목데이터</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="d1">항목명</th>
+                                        <td class="d2">항목데이터</td>
+                                        <th class="d3">항목명</th>
+                                        <td class="d4">항목데이터</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="d1">항목명</th>
+                                        <td class="d2">항목데이터</td>
+                                        <th class="d3">항목명</th>
+                                        <td class="d4">항목데이터</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="d1">항목명</th>
+                                        <td class="d2">항목데이터</td>
+                                        <th class="d3">항목명</th>
+                                        <td class="d4">항목데이터</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page4">
+                    <figure class="sub_ban">
+                        <img src="https://www.abko.co.kr/img/sub/sub_visual_04.png" alt="고객지원">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">고객지원</h2>
+                            <p class="sub_com"></p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index.html" class="home">HOME</a>
+                                </li>
+                                <li class="item2">고객지원</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel4" class="sel">
+                                        <option value="support.html#page1">게시판</option>
+                                        <option value="support.html#page2">자료실</option>
+                                        <option value="support.html#page3">자주 묻는 질문</option>
+                                        <option value="support.html#page4" selected>대리점 정보</option>
+                                        <option value="support.html#page5">SHOP</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <p>앱코의 제품들을 오프라인에서 만나실 수 있습니다.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page5">
+                    <figure class="sub_ban">
+                        <img src="http://ncore.co.kr/img/support_back.jpg" alt="SHOP">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">SHOP</h2>
+                            <p class="sub_com"></p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index.html" class="home">HOME</a>
+                                </li>
+                                <li class="item2">고객지원</li>
+                              
+                                <li class="item3">
+                                    <select name="sel" id="sel5" class="sel">
+                                        <option value="support.html#page1">게시판</option>
+                                        <option value="support.html#page2">자료실</option>
+                                        <option value="support.html#page3">자주 묻는 질문</option>
+                                        <option value="support.html#page4">대리점 정보</option>
+                                        <option value="support.html#page5" selected>SHOP</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="pom">
+                                <img src="http://admin.ncore.co.kr/data/item/688/2586312688_500_1.jpg" alt="ABKO SUITMASTER RISER CABLE Ⅱ￦ 40,000">
+                                <p>ABKO SUITMASTER RISER CABLE Ⅱ￦ 40,000</p></li>
+                            <li class="pom">
+                                <img src="http://admin.ncore.co.kr/data/item/247/2586312247_500_1.jpg" alt="ABKO HACKER 키캡/스위치 리무버 세트￦ 1,000">
+                                <p>ABKO HACKER 키캡/스위치 리무버 세트￦ 1,000</p></li>
+                            <li class="pom">
+                                <img src="http://admin.ncore.co.kr/data/item/019/2586312019_500_1.jpg" alt="ABKO SUITMASTER 모듈러 스토리지 베이￦ 10,000">
+                                <p>ABKO SUITMASTER 모듈러 스토리지 베이￦ 10,000</p></li>
+                            <li class="pom">
+                                <img src="http://admin.ncore.co.kr/data/item/002/2586312002_500_1.jpg" alt="ABKO HACKER LK 광축 클릭 ￦ 300">
+                                <p>ABKO HACKER LK 광축 클릭 ￦ 300</p></li>
+                            <li class="pom">
+                                <img src="http://admin.ncore.co.kr/data/item/756/2586311756_500_1.jpg" alt="ABKO HACKER GTMX 교환형 스위치 (화이트/청축)￦ 300">
+                                <p>ABKO HACKER GTMX 교환형 스위치 (화이트/청축)￦ 300</p></li>
+                            <li class="pom">
+                                <img src="http://admin.ncore.co.kr/data/item/839/2586311839_500_1.jpg" alt="ABKO HACKER 헤드셋 거치대(블랙)￦ 300">
+                                <p>ABKO HACKER 헤드셋 거치대(블랙)￦ 300</p></li>
+                        </ul>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <script>
+            $(document).ready(function(){
+                $(".sel").change(function(){
+                    location.href = this.value;
+                });
+            });    
+            </script>
+        </div>
+
+        <footer id="ft">
+            <div class="ft_wrap">
+                <nav class="fnb"><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a></nav>
+                <nav class="snb">
+                    <ul>
+                        <li><a href="" title="네이버"><i class="xi-naver-square"></i></a></li>
+                        <li><a href="" title="페이스북"><i class="xi-facebook-official"></i></a></li>
+                        <li><a href="" title="인스타그램"><i class="xi-instagram"></i></a></li>
+                        <li><a href="" title="카카오톡"><i class="xi-kakaotalk"></i></a></li>
+                    </ul>
+                </nav>
+                <p class="copyright">상호 : 주식회사 앱코 대표이사 : 조수민 개인정보관리책임자 : 펭수 관리자 메일 : webmaster2020@abko.co.kr (제휴, 상담문의 불가)
+                    통신판매신고 : 2020-서울강서-0310 본사 : 서울특별시 강남구 삼청동 20, 7층 (삼청동) 사업자 등록번호 : 000-00-00000
+                    고객센터 : 1644-0844 업무시간 : 09:30~17:00 점심시간 : 12:00~13:00 (공휴일 및 토/일 휴무)</p>
+            </div>
+
+        </footer>
+    </div>
+    
+</body>
+</html>

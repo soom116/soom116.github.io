@@ -1,0 +1,47 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+ body, html {font-family: 'Dongle', sans-serif; width: 100%;}  
+ ul {list-style: none;}
+ a{text-decoration: none; }
+
+
+ .vs_tit {font-family: 'Yung'; }
+ i[class*='xi'] {font-size: 20px; color: ;}
+ i[class*='xi']:hover {color:aquamarine;}
+
+.wrap { clear:both; width: 100%;}
+/*헤더*/
+ #hd {clear:both; width: 100%; position: fixed; top: 0; left: 0; height: 80px; z-index: 999;
+background-color: rgba(255,255,255);}
+ .hd_wrap {clear: both; width: 1280px; ; margin: 0 auto; margin-top: 40px;}
+ .logo { display:block; width: 200px; float: left; margin-top: 10px;}
+ .logo img {display: block; width: 80%; margin-top: 5px; margin-bottom: 30px;}
+ #gnb {float:left; font-size: 30px;  margin-top: 10px;}
+ #gnb > ul > li {float: left; padding-left: 50px; padding-right: 30px; position: relative;
+line-height: 38px; padding-top: 10px;  }
+
+ #gnb > ul > li > span {display: block; line-height: 40px; cursor: pointer;}
+ #gnb ul li .sub {display: none; position: absolute; left: 10; top: 40; z-index: 999; padding-left: 10px; width: 150px; height: 440px; background-color: #fff;}
+ #gnb ul li:hover .sub { display: block;}
+ #gnb ul li .sub li a { color: black;}
+ #gnb ul li .sub li:hover a{ color: rgba(233, 213, 37, 0.815); text-decoration: underline;}
+ #gnb ul li .sub li { line-height: 38px; padding-top: 8px; }
+ #gnb ul li:hover span{ color: rgba(42, 241, 198, 0.61);} 
+
+ 
+ #tnb {float:right; padding-top: 10px;  margin-top: 20px;}
+ #tnb a {font-size: 20px; padding-left: 20px;}
+ #tnb a:hover{ color: cornflowerblue; text-decoration: underline;}
+
+ #content {clear: both; width: 100%;}
+
+ /* 푸터 */
+ #ft { clear:both; width: 100%; padding-top: 20px; border-top:3px solid #f1f1f1;  }
+ .ft_wrap { clear:both; width: 1280px; margin: 0 auto; position:relative; height:90px;}
+ .fnb { float:left; }
+ .fnb a { display:block; float:left; margin:14px; 
+     margin-left: 0; margin-right: 28px; font-size:12px; }
+ .snb { position:absolute; right: 0; bottom: 10px; }   
+ .snb ul { clear:both; }
+ .snb ul li { float:right; margin-left: 28px; margin-right: 0px; margin-top: 10px; }
+ .copyright { float: left; padding-bottom: 50px; font-size: 20px; margin-left: 0px; margin-right: 0px; }

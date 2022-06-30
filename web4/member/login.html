@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 메타 데이터 -->
+    <meta name="url" content="https://www.yesdoctor.com/index.html">
+    <meta name="description" content="고양시 중앙로 위치, 한방내과, 한방부인과, 한방소아과, 한방신경정신과, 한방재활의학과">
+    <meta name="keywords" content="고양시 중앙로 위치, 한방내과, 한방부인과, 한방소아과, 한방신경정신과, 한방재활의학과">
+    <!-- 오픈 그래프 -->
+    <meta property="og:url" content="http://www.ilsansonamu.co.kr//index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="주엽소나무한의원">
+    <meta property="og:description" content="고양시 중앙로 위치, 한방내과, 한방부인과, 한방소아과, 한방신경정신과, 한방재활의학과">
+    <meta property="og:site_name" content="주엽소나무한의원">
+    <!-- jquery 임포트 -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	<!-- 메인 화면의 스타일들을 넣어놓은 common.css를 불러옵니다. -->
+	<link rel="stylesheet" href="/common.css">
+
+    <title>주엽소나무한의원</title>
+	<style>
+        .form {
+			position: relative;
+			z-index: 1;
+			background: #FFFFFF;
+			max-width: 360px;
+			margin: 0 auto 100px;
+			margin-top:100px;
+			padding: 45px;
+			text-align: center;
+			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+		}
+		.form input {
+			font-family: "Roboto", sans-serif;
+			outline: 0;
+			background: #f2f2f2;
+			width: 100%;
+			border: 0;
+			margin: 0 0 15px;
+			padding: 15px;
+			box-sizing: border-box;
+			font-size: 14px;
+		}
+		.form button {
+			font-family: "Roboto", sans-serif;
+			text-transform: uppercase;
+			outline: 0;
+			background: #2c51c0;
+			width: 100%;
+			border: 0;
+			padding: 15px;
+			color: #FFFFFF;
+			font-size: 14px;
+			-webkit-transition: all 0.3 ease;
+			transition: all 0.3 ease;
+			cursor: pointer;
+		}
+		
+		.form button:hover,.form button:active,.form button:focus {
+			background: #4a6ac7;
+		}
+		.form .message {
+			margin: 15px 0 0;
+			color: #b3b3b3;
+			font-size: 12px;
+		}
+		
+		.form .message a {
+			color: #343a40;
+			text-decoration: none;
+		}
+		.form .register-form {
+			display: none;
+		}
+    </style>
+</head>
+<body>
+	<header id="header" class="header" name="header" >
+        <div class="inner">
+            <h1 class="logo"><a href="/"><img src="/sommimg/main/logo.png" alt="주엽소나무한의원"></a></h1>
+            <button type="button" class="btnMenu"><span>MENU</span></button>
+        </div>
+        <nav id="gnb">
+            <div class="login">
+                <span class="sign"><a href="/member/login.html">로그인</a></span>
+                    <span><a href="/member/agree.html">회원가입</a></span>
+            </div>
+            <div class="list" >
+                <ul id="main-menu" >
+                    <li class=""><a href="/intro/intro.html#page1">한의원 소개</a>
+                        <div class="subDepth">
+                            <ul id="sub-menu" style="border-left:  1px solid #ddd;">
+                                <li class=""><a href="/intro/intro.html#page1">한의원 소개</a></li>
+                                <li class=""><a href="/intro/intro.html#page2">의료진 소개</a></li>
+                                <li class=""><a href="/intro/intro.html#page3">찾아오시는 길</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class=""><a href="/menu/menu1.html"">소나무치료법</a>
+                        <div class="subDepth">
+                            <ul id="sub-menu">
+                                <li class=""><a href="/menu/menu1.html#page1">침, 부, 왕뜸</a></li>
+                                <li class=""><a href="/menu/menu1.html#page2">척추양침, 봉침</a></li>
+                                <li class=""><a href="/menu/menu1.html#page3">추나치료</a></li>
+                                <li class=""><a href="/menu/menu1.html#page4">면역, 재생 한약</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class=""><a href="/menu/menu2.html">척추관절통증클리닉</a>
+                        <div class="subDepth">
+                            <ul id="sub-menu">
+                                <li class=""><a href="/menu/menu2.html#page1">허리디스크, 협착</a></li>
+                                <li class=""><a href="/menu/menu2.html#page2">목디스크, 일자목</a></li>
+                                <li class=""><a href="/menu/menu2.html#page3">퇴행성관절염</a></li>
+                                <li class=""><a href="/menu/menu2.html#page4">오십견</a></li>
+                                <li class=""><a href="/menu/menu2.html#page5">회전근개파열</a></li>
+                                <li class=""><a href="/menu/menu2.html#page6">체형, 골반교정</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class=""><a href="/menu/menu3.html">교통사고</a>
+                        <div class="subDepth">
+                            <ul id="sub-menu">
+                                <li class=""><a href="/menu/menu3.html#page1">교통사고 후유증&치료</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class=""><a href="/menu/menu4.html">다이어트</a>
+                        <div class="subDepth">
+                            <ul id="sub-menu">
+                                <li class=""><a href="/menu/menu4.html#page1">한방 다이어트</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class=""><a href="/menu/menu5.html">보약/공진단/경옥고</a>
+                        <div class="subDepth">
+                            <ul id="sub-menu">
+                                <li class=""><a href="/menu/menu5.html#page1">오픈형원내탕전실</a></li>
+                                <li class=""><a href="/menu/menu5.html#page2">공진단</a></li>
+                                <li class=""><a href="/menu/menu5.html#page3">경옥고</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class=""><a href="/menu/menu6.html">커뮤니티</a>
+                        <div class="subDepth">
+                            <ul id="sub-menu">
+                                <li class=""><a href="/menu/menu6.html#page1">공지사항</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>			
+    </header>
+	<div id="ct">
+        <div class="loginbox">
+            <div class="login-page">
+                <form class="form" action="/index.html" method="post">
+                    <input type="text" placeholder="아이디" name="userid" id="userid" required />
+                    <input type="password" placeholder="비밀번호" name="userpw" id="userpw" required />
+                    <button type="submit">login</button>
+                    <p class="message">아이디가 없으십니까? <a href="/member/agree.html">회원가입</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+	<footer id="footer" class="footer" name="footer">
+        <div class="footSns">
+            <div class="inner">
+                <h4 class="tit">주엽소나무한의원 SNS</h4>
+                <p class="link">
+                    <a href="https://www.youtube.com/" class="link5" target="_blank">유튜브</a>
+                    <a href="https://tv.naver.com/" class="link1" target="_blank">네이버TV</a>
+                    <a href="http://post.naver.com/" class="link2" target="_blank">포스트</a>
+                    <a href="http://blog.naver.com/" class="link4" target="_blank">블로그</a>
+                    <a href="https://audioclip.naver.com/" class="link3" target="_blank">오디오클립</a>
+                    <a href="https://www.facebook.com/" class="link6" target="_blank">페이스북</a>
+                </p>
+            </div>
+        </div>
+        <nav class="footLink">
+            <div class="inner">
+                <span><a href="">이용약관</a></span>
+                <span><a href="">개인정보처리방침</a></span>
+                <span><a href="">환자의 권리와 의무</a></span><br class="mobShow">
+                <span><a href="">비급여안내</a></span>
+        
+                <p class="net"><a href="" target="_blank">주엽소나무한의원 실시간채팅 <span>바로가기</span></a></p>
+            </div>
+        </nav>
+        <div class="footInfo">
+            <div class="inner">
+                <b>주엽소나무한의원</b>
+                <span>한의원명:주엽소나무한의원 주소:경기 고양시 일산서구 중앙로 1422 우리은행건물 2층</span><br>
+                <span>사업자 등록번호 : 810-90-01071</span><span>대표자:조수민</span><span>대표전화 : 031-123-1004</span><br>
+                <small class="copy">COPYRIGHT© 2020 ilsansonamu.co.kr ALL RIGHT RESERVED.</small>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

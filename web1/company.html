@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./monami/main/favicon.ico">
+    <link rel="apple-touch-icon" href="./monami/main/favicon.ico">
+    <!--검색(메타) 정보-->
+    <meta name="url" content="http://www.monami.com/">
+    <meta name="title" content="모나미">
+    <meta name="description" content="모나미의 기업정보, 제품정보, 미디어, 커뮤니티">
+    <meta name="keywords" content="모나미, 펜, 마카, 형광펜, 미술용품">
+    <!--오픈 그래프-->
+    <meta property="og:url" content="http://www.monami.com/">
+    <meta property="og:title" content="모나미">
+    <meta property="og:description" content="모나미의 기업정보, 제품정보, 미디어, 커뮤니티">
+    <meta property="og:image" content="./img/logo-square-letter.png">
+    <title>MONAMI</title>
+    <!--기본 플러그인 연결-->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!--폰트 모듈 연결-->
+    <style>
+   @font-face {
+       font-family: 'nam';
+       src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Eoe_Zno_L.woff') format('woff');
+       font-weight: normal;
+       font-style: normal;
+    }
+    </style>
+    <!--웹 아이콘 연결-->
+    <!--XEIcon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!--스타일 초기화 모듈 연결-->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="sub_common.css">
+    <style>
+    .page { clear:both; min-height:100vh; display:none; padding-top: 100px; }
+    .page:target { display:block; }
+    #hd { position:fixed; top: 0; left: 0; height:100px; z-index:999;
+    background-color: rgba(255,255,255,0.75); }
+    .blacktest1 { color: black; font-size: 28px;}
+    
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header id="hd">
+            <div class="hd_wrap">
+                <a href="index.html" class="logo">
+                    <img src="./monami/logo.svg" alt="로고">
+                </a>
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <span>모나미소개</span>
+                            <ul class="sub">
+                                <li><a href="company.html#page1">CEO 메시지</a></li>
+                                <li><a href="company.html#page2">회사정보</a></li>
+                                <li><a href="company.html#page3">회사연혁</a></li>
+                                <li><a href="company.html#page4">CI</a></li>
+                                <li><a href="company.html#page5">찾아오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>모나미제품</span>
+                            <ul class="sub">
+                                <li><a href="product.html#page1">펜</a></li>
+                                <li><a href="product.html#page2">마카</a></li>
+                                <li><a href="product.html#page3">형광펜</a></li>
+                                <li><a href="product.html#page4">미술용품</a></li>
+                                <li><a href="product.html#page5">카탈로그</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>NEWS & VIDEO</span>
+                            <ul class="sub">
+                                <li><a href="news.html#page1">보도자료</a></li>
+                                <li><a href="news.html#page2">동영상자료</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>고객지원</span>
+                            <ul class="sub">
+                                <li><a href="sup.html#page1">자주묻는질문</a></li>
+                                <li><a href="sup.html#page2">문의하기</a></li>
+                                <li><a href="sup.html#page3">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>기업구매 / 개발</span>
+                            <ul class="sub">
+                                <li><a href="group.html#page1">기업 및 단체 구매</a></li>
+                                <li><a href="group.html#page2">산업용 맞춤 제품개발</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <p id="tnb">
+                    <a href="">HOME</a>
+                    <a href="">SITE MAP</a>
+                    <a href="">CONTACT US</a>
+                </p>
+            </div>
+        </header>
+        <div id="content">
+            <div class="content_wrap">
+                <section class="page" id="page1">
+                    <figure class="sub_ban">
+                        <img src="./monami/intro/ceo1/page_visual1.jpg" alt="CEO 메시지">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">모나미소개</h2>
+                            <p class="sub_com">언제 어디서나 모나미는 당신 곁에 있습니다.</p><br><br><br><br><br><br>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index.html" class="home">HOME</a>
+                                </li>
+                                <li class="item2">모나미소개</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel1" class="sel">
+                                            <option value="company.html#page1" selected>CEO 메시지</option>
+                                            <option value="company.html#page2">회사정보</option>
+                                            <option value="company.html#page3">회사연혁</option>
+                                            <option value="company.html#page4">CI</option>
+                                            <option value="company.html#page5">찾아오시는 길</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <h1 class="tit1">CEO <span class="redtext">MESSAGE</span></h1><br><br>
+                            <img src="./monami/intro/ceo1/ceo.png" alt="" class="">
+                            <p class="h4con"><br><br>
+                            안녕하십니까? (주)모나미 대표이사 송하경입니다.<br>
+                            언제나 한결같이 모나미에 애정과 관심을 보여주시는 고객 및 주주 여러분들께 깊은 감사를 드립니다.<br><br>
+                            1960년 창립된 광신화학공업사에서 출발한 모나미의 역사가 어느덧 반백년이 넘었습니다.<br>
+                            지금의 모나미를 있게한 ‘모나미 153’볼펜은 지난 50여 년간 꾸준한 사랑을 받으며<br>
+                            모나미를 필기구의 대명사이자<br>
+                            국민 브랜드로 성장시켰습니다. 이처럼 많은 분들의 사랑에 힘입어 문구 업계의 혁신을 주도할 수 있었으며,<br>
+                            사인펜, 프러스펜, 네임펜, 보드 마카 등 수 많은 히트작들을 선보일 수 있었습니다.<br><br>
+                            필기구를 넘어 종합문구 분야의 선도적인 기업으로 건실한 성장을 이뤄온 모나미는 국내시장 뿐 아니라<br>
+                            해외시장에서도 꾸준한 성장을 거둬 전세계 다양한 국가로 수출되고 있습니다.<br><br>
+                            하지만 모나미는 지난 50여 년간의 성과에 만족하지 않고 새로운 출발에 나서려고 합니다.<br><br>
+                            종합문구분야의 선두 자리를 넘어 문구와 유통을 아우르는 새로운 비즈니스 모델을 만들어 나가고 있습니다.<br>
+                            하루가 다르게 변하는 트렌드와 시대의 변화에 대처하기 위해서<br>
+                            모나미의 기업 문화 역시 새롭게 만들어 나가고 있습니다.<br>
+                            미래를 긍정적으로 바라보면서 준비하고, 항상 즐거운 변화를 추구하는 기업이 되겠습니다.<br>
+                            시장에 대해서는 항상 겸손하고, 고객에 대해서는 항상 함께하는 친구 같은 마음과 자세로 대할 것입니다.<br><br>
+                            앞으로 모나미는<br>
+                            '오래된 친구지만 항상 신선하고 놀라움으로 가득찬, 그리고 미래를 위해 쉼 없이 노력하는' 기업이 되고자<br>
+                            합니다. 모나미의 새로운 변화와 도전을 지켜봐 주시길 바라며,<br>
+                            앞으로도 변함없는 사랑과 격려를 부탁드립니다.<br><br>
+                            감사합니다. <br><br>
+                            (주)모나미 대표 &nbsp; &nbsp; &nbsp; <img src="./monami/intro/ceo1/sign.jpg" alt="">
+                            </p> 
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page2">
+                    <figure class="sub_ban">
+                        <img src="./monami/intro/ceo1/page_visual1.jpg" alt="회사정보"><br>
+                        <div class="tit_box">
+                            <h2 class="sub_tit">모나미소개</h2>
+                            <p class="sub_com">언제 어디서나 모나미는 당신 곁에 있습니다.</p><br><br><br><br><br><br>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">모나미소개</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel2" class="sel">
+                                            <option value="company.html#page1">CEO 메시지</option>
+                                            <option value="company.html#page2"selected>회사정보</option>
+                                            <option value="company.html#page3">회사연혁</option>
+                                            <option value="company.html#page5">CI</option>
+                                            <option value="company.html#page5">찾아오시는 길</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <h1 class="tit1">COMPANY <span class="redtext">INFO</span></h1><br><br>
+                            <p class="ptit">1. 계열사 소개</p> <br>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="./monami/intro/info2/1-1.png">
+                                    </td>
+                                    <td>
+                                        <img src="./monami/intro/info2/1-2.png">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="./monami/intro/info2/1-3.png"></td>
+                                    <td><img src="./monami/intro/info2/1-4.png"></td>
+                                </tr>
+                            </table><br><br><br>
+                            <p class="ptit">2. 해외 법인</p> <br>
+                            <img src="./monami/intro/info2/company_info3_img1.jpg" alt="" class="">
+                            <p class="ptit2">THAILAND</p>
+                            <p class="pcon2">모나미 타일랜드 (방콕)<br>
+                                법인명 MONAMI THAILAND<br>
+                                주소#475 Siripinyo Bldg.,12th floor, Si Ayutthaya Rd.,Khwaeng ThanonPhayathai, Khet Ratchathewi, Bangkok 10400 Thailand<br>
+                                전화+66-2-640-0980-2<br>
+                                팩스+66-2-640-0980-2<br>
+                                SNSwww.facebook.com/monami.thailand/<br><br>
+                            </p>
+                            <p class="ptit2">THAILAND</p>
+                            <p class="pcon2">모나미 타일랜드 (아마타 공장)<br>
+                                주소Amata City Industrial Estate 7/281 Moo. 6 Mabyangporn, Plaukdang, Rayong 21140 Thailand<br>
+                                전화+66-38-6508091-4218 <br><br>
+                            </p>
+                            <p class="ptit2">CHINA</p>
+                            <p class="pcon2">상해 모나미 (상하이)<br>
+                                법인명上海慕那美文化用品有限公司 (SHANGHAI MONAMI)<br>
+                                홈페이지www.monami.com.cn<br>
+                                주소(중문)嘉定区兴贤路1388号9号楼<br>
+                                주소(영문)Building No.9, 1388 ,XingXian Road, Jiading District,, Shanghai, China.<br>
+                                전화+86-21-69521210-69521216<br>
+                                팩스+86-21-69521250-59160776<br>
+                                SNSweibo.com/shmonami<br><br>
+                            </p>
+                            <p class="ptit2">POLAND</p>
+                            <p class="pcon2">제니스 모나미 (바르샤바)<br>
+                                법인명ZENITH MONAMI<br>
+                                주소ul. Poleczki 23, 02-822, Warsaw, Poland.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page3">
+                    <figure class="sub_ban">
+                        <img src="./monami/intro/ceo1/page_visual1.jpg" alt="회사연혁">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">모나미소개</h2>
+                            <p class="sub_com">언제 어디서나 모나미는 당신 곁에 있습니다.</p><br><br><br><br><br><br>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">모나미소개</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel3" class="sel">
+                                        <option value="company.html#page1">CEO 메시지</option>
+                                            <option value="company.html#page2">회사정보</option>
+                                            <option value="company.html#page3"selected>회사연혁</option>
+                                            <option value="company.html#page4">CI</option>
+                                            <option value="company.html#page5">찾아오시는 길</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <h1 class="tit1">MONAMI <span class="redtext">HISTORY</span></h1><br><br>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="./monami/intro/history3/history_img1.png">
+                                    </td>
+                                    <td>
+                                        <p class="blacktest1">새로운<br>50년의<span class="redtext">시작</span></p><br>
+                                        <p class="blacktext">2022 &nbsp; &nbsp; 모나미 컨셉스토어 성수점 오픈</p>
+                                        <p class="blacktext">2021 &nbsp; &nbsp; 디자인 문구 브랜드 Zenith, ZEQUENZ 론칭 / 모나미몰 쇼핑 앱 출시</p>
+                                        <p class="blacktext">2020 &nbsp; &nbsp; 모나미 창립 60주년 기념 프러스펜 3000 데스크펜, 프러스펜 3000 60색 세트 출시</p>
+                                        <p class="blacktext">2019 &nbsp; &nbsp; 모나미 컨셉스토어 인사동점 오픈</p>
+                                        <p class="blacktext">2018 &nbsp; &nbsp; 대한민국 디자인 대상 디자인 경영부문 국무총리상 수상<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;모나미 스토어 오픈 (롯데백화점 부산점/평촌점, MCC 합정)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;153 고급필기구 런칭 (153 NEO 만년필)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;모나미 타일랜드 아마타공장 증축
+                                        </p>
+                                        <p class="blacktext">2017 &nbsp; &nbsp; 153 고급 필기구 런칭(153 GOLD)</p>
+                                        <p class="blacktext">2016 &nbsp; &nbsp; 모나미 컨셉스토어 2호점(DDP) / 3호점(에버랜드) 오픈</p>
+                                        <p class="blacktext">2015 &nbsp; &nbsp;국내문구업계 최초 모나미 컨셉스토어 1호점 오픈 (서울 합정동)</p>
+                                        <p class="blacktext">2014 &nbsp; &nbsp; 153 고급 필기구 런칭 (153 리미티드, 153 ID, 153 리스펙트)</p>
+                                        <p class="blacktext">2013 &nbsp; &nbsp; 153 볼펜 출시 50년 / 프러스펜 S 출시</p>
+                                        <p class="blacktext">2012 &nbsp; &nbsp; 기업용 홍보 통합 제작 서비스 MPOD 솔루션 설립</p>
+                                        <p class="blacktext">2010 &nbsp; &nbsp; 모나미 창립 50주년 / 모나미 타일랜드 아마타공장 신축</p><br><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <P class="blacktest1">사무용품 유통서비스<br>기업으로의 <span class="redtext">도약</span></P><br>
+                                        <p class="blacktext">2009 &nbsp; &nbsp; 프로유성매직 국내문구 최초 RED DOT AWARD 수상</p>
+                                        <p class="blacktext">2007 &nbsp; &nbsp; 모나미스테이션 사업개시</p>
+                                        <p class="blacktext">2007 &nbsp; &nbsp; 세계최초 생잉크 보드마커 시그마플로 출시</p>
+                                        <p class="blacktext">2006 &nbsp; &nbsp; MIS(모나미이미징솔루션)설립</p><br><br>
+                                    </td>
+                                    <td>
+                                        <img src="./monami/intro/history3/history_img2.png">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./monami/intro/history3/history_img3.png">
+                                    </td>
+                                    <td>
+                                        <P class="blacktest1">글로벌<br>기업으로의 <span class="redtext">도약</span></P><br>
+                                        <p class="blacktext">2001 &nbsp; &nbsp; 상해 모나미 문화용품 유한공사 (중국현지법인) 설립</p>
+                                        <p class="blacktext">2001 &nbsp; &nbsp; Zenith-MonAmi 설립 (폴란드 합작법인)</p>
+                                        <p class="blacktext">2001 &nbsp; &nbsp; e-비지니스 사업부 신설</p>
+                                        <p class="blacktext">2000 &nbsp; &nbsp; (주)익스프레스라인 14와 합병</p><br><br>
+                                    <td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <P class="blacktest1">사업진출<br><span class="redtext">다각화</span></div><br><br>
+                                        <p class="blacktext">1996 &nbsp; &nbsp; 주)모나미로 (주)모나미 애드 합병</p>
+                                        <p class="blacktext">1992 &nbsp; &nbsp; (주)모나미 애드 / 항소 인터내셔널 (미국)설립</p>
+                                        <p class="blacktext">1990 &nbsp; &nbsp; (주)항소 설립</p>
+                                        <p class="blacktext">1990 &nbsp; &nbsp; 모나미 데이타 시스템 설립 (1992년 모나미컴퓨터시스템으로 변경)</p><br><br>
+                                    </td>
+                                    <td>
+                                        <img src="./monami/intro/history3/history_img4.png">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./monami/intro/history3/history_img5.png">
+                                    </td>
+                                    <td>
+                                        <P class="blacktest1">모나미의<br><span class="redtext">성장기</span><br><br>
+                                        <p class="blacktext">1989 &nbsp; &nbsp; 모나미 타일랜드 출범 (태국 차이아난다사와 합작)</p>
+                                        <p class="blacktext">1988 &nbsp; &nbsp; 안산 공장 신축, 이전(1,2 공장 통합)</p>
+                                        <p class="blacktext">1974 &nbsp; &nbsp; 주식회사 모나미로 상호변경 / 증권 거래소 주식 상장</p>
+                                        <p class="blacktext">1970 &nbsp; &nbsp; 모나미 쎌라 만년필(주) 흡수합병</p>
+                                        <p class="blacktext">1970 &nbsp; &nbsp; 제2공장 신축(성수동)</p><br><br>
+                                    <td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <P class="blacktest1">모나미의 창업과<br><span class="redtext">도약기</span></div><br><br>
+                                            <p class="blacktext">1967 &nbsp; &nbsp; 모나미 화학 공업 주식회사 설립</p>
+                                            <p class="blacktext">1963 &nbsp; &nbsp; 제1공장 신축(성수동)</p>
+                                            <p class="blacktext">1963 &nbsp; &nbsp; 사인펜, 매직펜 생산</p>
+                                            <p class="blacktext">1963 &nbsp; &nbsp; 153 볼펜 생산개시</p>
+                                            <p class="blacktext">1960 &nbsp; &nbsp; 광신 화학 공업사 설립 (회화구류 생산 시작)</p><br><br>
+                                    </td>
+                                    <td>
+                                        <img src="./monami/intro/history3/history_img6.png">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page4">
+                    <figure class="sub_ban">
+                        <img src="./monami/intro/ceo1/page_visual1.jpg" alt="CI">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">모나미소개</h2>
+                            <p class="sub_com">언제 어디서나 모나미는 당신 곁에 있습니다.</p><br><br><br><br><br><br>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">모나미소개</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel4" class="sel">
+                                        <option value="company.html#page1">CEO 메시지</option>
+                                        <option value="company.html#page2">회사정보</option>
+                                        <option value="company.html#page3">회사연혁</option>
+                                        <option value="company.html#page4" selected>CI</option>
+                                        <option value="company.html#page5">찾아오시는 길</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <h1 class="tit1">MONAMI <span class="redtext">CI</span></h1><br><br>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <p class="ptit">1. English Logo</p><br>
+                                    </td>
+                                    <td>
+                                        <p class="ptit">2. Korean Logo</p><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./monami/intro/ci5/ci_en_logo.jpg"><br><br>
+                                    </td>
+                                    <td>
+                                        <img src="./monami/intro/ci5/ci_kr_logo.jpg"><br><br>
+                                    </td>
+                                </tr>
+                            </table>
+                            <img src="./monami/intro/ci5/1-1.png" alt="" class=""><br><br>
+                            <p class="ptit">3. Color Logo</p><br>
+                            <img src="./monami/intro/ci5/20220502_160906.png" alt="" class=""><br><br>
+                            <p class="ptit">4. Prohibited Rule System</p><br>
+                            <img src="./monami/intro/ci5/ci_rule_img1.jpg" alt="" class=""><br><br>
+                            <p class="blacktext">A . 코퍼레이트마크 색상 규정 이외의 색상은 사용할 수 없습니다.<br>
+                                B . 코퍼레이트마크 안에 임의의 PATTERN을 사용할 수 없으며, 라인으로 사용할 수 없습니다.<br>
+                                C . 코퍼레이트마크의 형태를 임의로 변형할 수 없습니다.<br>
+                                D . 코퍼레이트마크의 LINE DROP SHADOW를 적용하거나 임의로 디자인 요소를 첨가할 수 없습니다.
+                            </p>
+                            <br><br>
+                            <h1 class="tit1">Character Mobee</h1>
+                            <p class="ptit">1. Mobee Logo_기본형</p><br>
+                            <img src="./monami/intro/ci5/ci_mobee_logo1.jpg" alt="" class=""><br><br>
+                            <p class="ptit">2. Mobee Logo_응용형</p><br>
+                            <img src="./monami/intro/ci5/ci_mobee_logo2.jpg" alt="" class=""><br><br>
+                            <p class="ptit">3. Mobee Profile</p><br>
+                            <img src="./monami/intro/ci5/ci_character_01.jpg" alt="" class=""><br><br>
+                            <p class="ptit">4. Mobee Character_응용동작</p><br>
+                            <img src="./monami/intro/ci5/ci_mobee_img1.jpg" alt="" class=""><br><br>
+                            <p class="ptit">5. Mobee Character_표정</p><br>
+                            <img src="./monami/intro/ci5/ci_mobee_img2.jpg" alt="" class=""><br><br>
+                            <p class="blacktext">
+                            이 름&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;모비(mobee)<br>
+                            성 격&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;천진난만한 얼굴에 4차원적 행동을 즐김, 먼저 몸으로 보여주는 행동가이기는 하나<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            어설프고 실수투성이, <span class="redtext">호기심이 많고 도전정신이 강하고 화낼줄 모르는 순둥이</span><br>
+                            취 미&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;블로그하기, 여행<br>
+                            특 징&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;보통의 벌처럼 꿀을 좋아하지 않음.<br>
+                            단것을 먹으면 경기를 일으키는 독특한 식성, 블랙커피를 좋아함.<br>
+                            여러 디자인 후드티를 수집하여 변장술을 즐김.<br>
+                            얼리어답터, 새로운 신제품과 기술에 관심이 많음.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page5">
+                    <figure class="sub_ban">
+                        <img src="./monami/intro/ceo1/page_visual1.jpg" alt="찾아오시는 길">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">모나미소개</h2>
+                            <p class="sub_com">언제 어디서나 모나미는 당신 곁에 있습니다.</p><br><br><br><br><br><br>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">모나미소개</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel5" class="sel">
+                                        <option value="company.html#page1">CEO 메시지</option>
+                                        <option value="company.html#page2">회사정보</option>
+                                        <option value="company.html#page3">회사연혁</option>
+                                        <option value="company.html#page4">CI</option>
+                                        <option value="company.html#page5" selected>찾아오시는 길</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <h1 class="tit1">MONAMI <span class="redtext">CONTACT</span></h1><br><br>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="./monami/intro/map7/map1.png"><br>
+                                    </td>
+                                    <td>
+                                        <img src="./monami/intro/map7/map2.png"><br>
+                                    </td>
+                                </tr>
+                            </table><br><br><br>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="./monami/intro/map7/car1.png"><br>
+                                    </td>
+                                    <td>
+                                        <p>판교IC를 빠져 나와 '수지/신갈' 방향으로 오시면 됩니다.</p>
+                                    </td>
+                                    <td>
+                                        <img src="./monami/intro/map7/car2.png"><br>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            지하철 : 신분당선 동천역 2번 출구 도보 10분 거리<br>
+                                            일반버스 :<br>
+                                            분당선 미금역 7번 출구에서 버스 11번을 이용, 프레시원 정거장 하차<br>
+                                            또는 700-2번, 5번을 이용, KT 수지지사.물류센터 정거장 하차<br>
+                                            광역버스 :<br>
+                                            M4101번 (종로,을지로,남대문→동천동 현대홈타운2차아파트 정거장 하차)<br>
+                                            6900번(잠실→동천동 현대홈타운2차아파트 정거장 하차)<br>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <script>
+            $(document).ready(function(){
+                $(".sel").change(function(){
+                    location.href = this.value;
+                });
+            });    
+            </script>
+        </div>    
+        <footer id="ft">
+            <div class="ft_wrap">
+                <nav class="fnb">
+                    <a href="">회사소개</a>
+                    <a href="">개인정보처리방침</a>
+                    <a href="">이메일무단수집거부</a>
+                </nav>
+                <nav class="snb">
+                    <ul>
+                        <li class="sns1">
+                            <a href="sns.html#page1" title="유튜브"><i class="xi-youtube-play"></i></a>
+                        </li>
+                        <li class="sns2">
+                            <a href="sns.html#page2" title="페이스북"><i class="xi-facebook"></i></a>
+                        </li>
+                        <li class="sns3">
+                            <a href="sns.html#page3" title="네이버 포스트"><i class="xi-naver"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright">ADDRESS:경기도 용인시 수지구 손곡로17 | TEL:031-216-0153 | FAX:031-270-5154<br>Copyright © 2017 MONAMI.CO.,LTD. ALL RIGHTS RESERVED</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

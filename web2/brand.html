@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images2/favicon.ico">
+    <link rel="apple-touch-icon" href="images2/favicon.ico">
+    <!-- 검색(메타)엔진정보 -->
+    <meta name="ulr" content="https://www.abko12.co.kr">
+    <meta name="title" content="앱코">
+    <meta name="description" content="../images2/bx_loader.gif">
+    <meta name="keyword" content="앱코, 게임단, 상품">
+    <!-- 오픈 그래프 -->
+    <meta property="og:ulr" content="https://www.abko12.co.kr">
+    <meta property="og:title" content="앱코">
+    <meta property="og:description" content="앱코 기업정보, 제품, 게임단">
+    <meta property="og:img" content="../images2/bx_loader.gif">
+
+    <title>Abko</title>
+    <!-- 기본 플러그 연결 -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!-- 웹폰트/폰트 모듈 연결 -->
+    <!-- 구글폰트 복붙-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/Yeongdo-Rg.woff">
+    
+    
+    <!-- 웹아이콘 연결 -->
+    <!-- XEicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- 스타일 초기화 모듈 연결 -->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="sub_common.css">
+   
+    <!-- <link rel="stylesheet" href="./css/reset.css"> 또다른 방법 -->
+    <style>
+        /* 눈누폰트 복붙 */
+    @font-face {
+        font-family: 'yung';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/Yeongdo-Rg.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }</style>
+
+
+ <style>
+.pom , .pom1 {float: left; margin-top: auto; font-size: 25px; padding: 20px;}
+
+   
+
+</style>        
+</head>
+<body>
+    <div class="wrap">
+        <header id="hd">
+            <div class="hd_wrap">
+                <a href="index.html" class="logo">
+                    <img src="https://www.abko.co.kr/img/main/logo_red.png" alt=""></a>
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <span>회사소개</span>
+                            <ul class="sub" id="page_wrap">
+                                <li><a href="company.html#page1">ABKO</a></li>
+                                <li><a href="company.html#page2">CEO인사말</a></li>
+                                <li><a href="company.html#page3">CI.BI</a></li>
+                                <li><a href="company.html#page4">오시는 길</a></li>
+                                <li><a href="company.html#page5">연혁</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>브랜드</span>
+                            <ul class="sub">
+                                <li><a href="brand.html#page1">ABKO</a></li>
+                                <li><a href="brand.html#page2">ABKOlife</a></li>
+                                <li><a href="brand.html#page3">CQX</a></li>
+                                <li><a href="brand.html#page4">NCOER</a></li>
+                                <li><a href="brand.html#page5">ABKONCORE</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>공지사항</span>
+                            <ul class="sub">
+                                <li><a href="notice.html#page1">공지사항</a></li>
+                                <li><a href="notice.html#page2">이벤트</a></li>
+                                <li><a href="notice.html#page3">뉴스</a></li>
+                                <li><a href="notice.html#page4">게임단</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>고객지원</span>
+                            <ul class="sub">
+                                <li><a href="support.html#page1">게시판</a></li>
+                                <li><a href="support.html#page2">자료실</a></li>
+                                <li><a href="support.html#page3">자주 묻는 질문</a></li>
+                                <li><a href="support.html#page4">대리점 정보</a></li>
+                                <li><a href="support.html#page5">SHOP</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>투자정보</span>
+                            <ul class="sub">
+                                <li><a href="financial.html#page1">재무정보</a></li>
+                                <li><a href="financial.html#page2">주가정보</a></li>
+                                <li><a href="financial.html#page3">공시/공고</a></li>
+                                <li><a href="financial.html#page4">내부정보관리규정</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <p id="tnb">
+                    <a href="">English</a>
+                    <a href="">China</a>
+                    <a href="">Spanish</a>
+                </p>
+            </div>
+        </header>
+        <div id="content">
+            <div class="content_wrap">
+                <section class="page" id="page1">
+                    <figure class="sub_ban">
+                        <img src="https://www.abko.co.kr/data/brand/category/70/owVX62NX4.png" alt="ABKO">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">ABKO</h2>
+                            <p class="sub_com"></p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index.html" class="home">HOME</a>
+                                </li>
+                                <li class="item2">브랜드</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel1" class="sel">
+                                        <option value="brand.html#page1" selected>ABKO</option>
+                                        <option value="brand.html#page2">ABKOlife</option>
+                                        <option value="brand.html#page3">CQX</option>
+                                        <option value="brand.html#page4">NCOER</option>
+                                        <option value="brand.html#page5">ABKONCORE</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <ul >
+                                <li class="pom"><img src="https://www.abko.co.kr/data/brand/1643846200/thumb-1_286x286.jpg" alt="게이밍 의자">
+                                    <p>AGC16-Dark Gray</p></li>
+                                <li class="pom"><img src="https://www.abko.co.kr/data/brand/1646627815/thumb-1_286x286.jpg" alt="">
+                                    <p>XTREAM XT-1000G 80PLUS GOLD Full Modular</p></li>
+                                <li class="pom"> <img src="https://www.abko.co.kr/data/brand/1646627337/thumb-T360_wh_main_2_1500px_220302_286x286.jpg" alt="">
+                                    <p>T360 THETIS ARGB-화이트</p></li>     
+                                <li class="pom"><img src="https://www.abko.co.kr/data/brand/1631690508/thumb-1_286x286.jpg" alt="">
+                                    <p>AMA32D PLUS USB 듀얼 모니터암-블랙</p></li>    
+                                <li class="pom"><img src="https://www.abko.co.kr/data/brand/1647395137/thumb-1_286x286.jpg" alt="">
+                                    <p>APC720 Lite HD 웹캠</p></li>
+                                <li class="pom"><img src="https://www.abko.co.kr/data/brand/1651454558/thumb-G40_wh_1500px_main_1_1_286x286.jpg" alt="">
+                                    <p>G40 시그니처- 화이트</p></li>                                      
+                                <li class="pom"><img src="https://www.abko.co.kr/data/brand/1650358198/thumb-2_286x286.jpg" alt="">
+                                    <p>AN50 아이스큐브 무빙 LED 광축 게이밍 키보드</p></li>
+                                <li class="pom"><img src="https://www.abko.co.kr/data/brand/1616128313/thumb-1_286x286.jpg" alt="">
+                                    <p>WM550 무소음 무선 블루투스 마우스 블랙</p></li>
+                                <li class="pom"><img src="https://www.abko.co.kr/data/brand/1621924327/thumb-1_286x286.jpg" alt="">
+                                    <p>B772 핑크 가상 7.1 진동 게이밍 헤드셋</p></li>    
+                            </ul>
+                        
+                        
+                                   
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page2">
+                    <figure class="sub_ban">
+                        <img src="https://www.abko.co.kr/data/brand/category/90/ahsStZG2B.jpg" alt="ABKOlife">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">ABKOlife</h2>
+                            <p class="sub_com"></p>
+
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index.html" class="home">HOME</a>
+                                </li>
+                                <li class="item2">브랜드</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel2" class="sel">
+                                        <option value="brand.html#page1">ABKO</option>
+                                        <option value="brand.html#page2" selected>ABKOlife</option>
+                                        <option value="brand.html#page3">CQX</option>
+                                        <option value="brand.html#page4">NCOER</option>
+                                        <option value="brand.html#page5">ABKONCORE</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <ul>
+                                <li class="pom1">
+                                    <img src="https://www.abko.co.kr/data/brand/1621932096/thumb-main_01_286x286.jpg" alt="">
+                                        <p>앱코 라이프 메모리폼 토퍼 ALT5</p>
+                                    </img>
+                                </li>
+                                <li class="pom1">
+                                    <img src="https://www.abko.co.kr/data/brand/1617932309/thumb-main_01_286x286.jpg" alt="">
+                                        <p>앱코 라이프 매트리스 ALM20H</p>
+                                    </img>
+                                </li>
+                                <li class="pom1">
+                                    <img src="https://www.abko.co.kr/data/brand/1617931327/thumb-main_01_286x286.jpg" alt="">
+                                        <p>앱코 라이프 메모리폼 필로우 ALP5371</p>
+                                    </img>
+                                </li>
+                                <li class="pom1">
+                                    <img src="https://www.abko.co.kr/data/brand/1617872224/thumb-main_01_286x286.jpg" alt="">
+                                        <p>앱코 라이프 메모리폼 토퍼 ALT76</p>
+                                    </img>
+                                </li>
+                                <li class="pom1">
+                                    <img src="https://www.abko.co.kr/data/brand/1624238147/thumb-main_01_286x286.jpg" alt="">
+                                        <p>앱코 라이프 캠핑 폴딩 박스 ALB100</p>
+                                    </img>
+                                </li>
+                                <li class="pom1">
+                                    <img src="https://www.abko.co.kr/data/brand/1623638740/thumb-main_1_286x286.jpg" alt="">
+                                        <p>앱코 라이프 릴렉스 체어 ACC200</p>
+                                    </img>
+                                </li>
+                                <li class="pom1">
+                                    <img src="https://www.abko.co.kr/data/brand/1621931296/thumb-main_01_286x286.jpg" alt="">
+                                        <p>앱코 라이프 커밋 체어ACC100</p>
+                                    </img>
+                                </li>
+                                <li class="pom1">
+                                    <img src="https://www.abko.co.kr/data/brand/1618190502/thumb-ACT100_main__286x286.jpg" alt="">
+                                        <p>앱코 라이프 캠핑 롤테이블 ACT100</p>
+                                    </img>
+                                </li>
+                                <li class="pom1">
+                                    <img src="https://www.abko.co.kr/data/brand/1620284185/thumb-FM180_1000_01_286x286.jpg" alt="">
+                                        <p>앱코 라이프 접이식 폴딩 매트 FM180</p>
+                                    </img>
+                                </li>
+                                <li class="pom1">
+                                    <img src="https://www.abko.co.kr/data/brand/1617930440/thumb-PTR19_main_01_286x286.jpg" alt="">
+                                        <p>앱코 라이프 필라테스 링 PTR19</p>
+                                    </img>
+                                </li>
+                                <li class="pom1">
+                                    <img src="https://www.abko.co.kr/data/brand/1617930064/thumb-TYM183_PP_01_286x286.jpg" alt="">
+                                        <p>앱코 라이프 TPE 요가매크TYM183</p>
+                                    </img>
+                                </li>
+                                <li class="pom1">
+                                    <img src="https://www.abko.co.kr/data/brand/1617929310/thumb-NYM183_01_1000_286x286.jpg" alt="">
+                                        <p>앱코 라이프 NBR 요가매트 NYM183</p>
+                                    </img>
+                                </li>
+                                <li class="pom1">
+                                    <img src="" alt="">
+                                        <p></p>
+                                    </img>
+                                </li>
+                                <li class="pom1">
+                                    <img src="https://www.abko.co.kr/data/brand/1623390692/thumb-main_01_286x286.jpg" alt="">
+                                        <p>앱코 라이프 캄포 통 원목 도마</p>
+                                    </img>
+                                </li>
+                                <li class="pom1">
+                                    <img src="https://www.abko.co.kr/data/brand/1623390417/thumb-main_01_286x286.jpg" alt="">
+                                        <p>앱코 라이프 캄포 집성목 도마 ALC3425CW</p>
+                                    </img>
+                                </li>
+                                <li class="pom1">
+                                    <img src="https://www.abko.co.kr/data/brand/1617937455/thumb-AMF100_1000_01_286x286.jpg" alt="">
+                                        <p>앱코 라이프 밀대 청소기 플랫형 AMF100</p>
+                                    </img>
+                                </li>
+                            </ul>  
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page3">
+                    <figure class="sub_ban">
+                        <img src="https://www.abko.co.kr/data/brand/category/20/omAs0jLGr.png" alt="CQX">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">CQX</h2>
+                            <p class="sub_com"></p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index.html" class="home">HOME</a>
+                                </li>
+                                <li class="item2">브랜드</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel3" class="sel">
+                                        <option value="brand.html#page1">ABKO</option>
+                                        <option value="brand.html#page2">ABKOlife</option>
+                                        <option value="brand.html#page3" selected>CQX</option>
+                                        <option value="brand.html#page4">NCOER</option>
+                                        <option value="brand.html#page5">ABKONCORE</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <ul>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1597139950/thumb-1_286x286.jpg" alt="">
+                                        <p>CBM03</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1597139835/thumb-1_286x286.jpg" alt="">
+                                        <p>CBM02 스트리밍 마이크</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1597139700/thumb-1_286x286.jpg" alt="">
+                                        <p>CBM01</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1624845034/thumb-1_286x286.jpg" alt="">
+                                        <p>GPL-L0 게이밍 데스크 패드</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1624499505/thumb-1_286x286.jpg" alt="">
+                                        <p>GMP-H2 게이밍 데스크 패드</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1624499396/thumb-1_286x286.jpg" alt="">
+                                        <p>GMP-H1 게이밍 장패드</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1603080981/thumb-main_1_286x286.jpg" alt="">
+                                        <p>CNR10</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1603074834/thumb-main_1_286x286.jpg" alt="">
+                                        <p>CNR10</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1603074746/thumb-main_1_286x286.jpg" alt="">
+                                        <p>CWS200L</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1633683179/thumb-CO01_main1_286x286.jpg" alt="">
+                                        <p>CO01 3단 아크릴 키보드 거치대</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1632900407/thumb-1_286x286.jpg" alt="">
+                                        <p>CTH30(3포트/USB 3.0 Type C)</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1627364829/thumb-1_286x286.jpg" alt="">
+                                        <p>CWC50 15W 차량용 마그네틱 무선충</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1645165971/thumb-1_286x286.jpg" alt="">
+                                        <p>CSB50</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1641541274/thumb-1_286x286.jpg" alt="">
+                                        <p>COX CSB100 BT 사운드바</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1641540963/thumb-1_286x286.jpg" alt="">
+                                        <p>COX CSB100 BT 사운드바</p>
+                                    </img>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page4">
+                    <figure class="sub_ban">
+                        <img src="https://www.abko.co.kr/data/brand/category/40/L6jWHhSP5.png" alt="NCOER">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">NCOER</h2>
+                            <p class="sub_com"></p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index.html" class="home">HOME</a>
+                                </li>
+                                <li class="item2">브랜드</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel4" class="sel">
+                                        <option value="brand.html#page1">ABKO</option>
+                                        <option value="brand.html#page2">ABKOlife</option>
+                                        <option value="brand.html#page3">CQX</option>
+                                        <option value="brand.html#page4" selected>NCOER</option>
+                                        <option value="brand.html#page5">ABKONCORE</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <ul>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1631495904/thumb-main_286x286.jpg" alt="">
+                                        <p>H10 허리케인 VGA Support</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1631495594/thumb-maincut1_286x286.jpg" alt="">
+                                        <p>G30 트루포스</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1631495420/thumb-main_286x286.jpg" alt="">
+                                        <p>G30 트루포스</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1621576653/thumb-main_286x286.jpg" alt="">
+                                        <p>L360 RGB</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1621576454/thumb-main_286x286.jpg" alt="">
+                                        <p>L240 RGB</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1613970981/thumb-main_286x286.jpg" alt="">
+                                        <p>L360 RGE</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1601958809/thumb-maincut1_286x286.jpg" alt="">
+                                        <p>더블도어 강화유리</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1596790535/thumb-maincut1_286x286.jpg" alt="">
+                                        <p>라이너 강화유리 Lunar Rainbow</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1591689569/thumb-main_286x286.jpg" alt="">
+                                        <p>Slash mini</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1591161864/thumb-2586311771_500_1_286x286.jpg" alt="">
+                                        <p>아레스 USB3.0 4면 풀 아크릴 윈도우 with HALO (화이트)</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1591162922/thumb-2586312567_500_2_286x286.jpg" alt="">
+                                        <p>아레스 USB3.0 4면 풀 아크릴 윈도우 black HALO</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1591161295/thumb-main4_286x286.jpg" alt="">
+                                        <p>T50 실린더 USB3.0</p>
+                                    </img>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page5">
+                    <figure class="sub_ban">
+                        <img src="https://www.abko.co.kr/data/brand/category/a0/wRn0e4krE.jpg" alt="ABKONCORE">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">ABKONCORE</h2>
+                            <p class="sub_com"></p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index.html" class="home">HOME</a>
+                                </li>
+                                <li class="item2">브랜드</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel5" class="sel">
+                                        <option value="brand.html#page1">ABKO</option>
+                                        <option value="brand.html#page2">ABKOlife</option>
+                                        <option value="brand.html#page3">CQX</option>
+                                        <option value="brand.html#page4">NCOER</option>
+                                        <option value="brand.html#page5" selected>ABKONCORE</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <ul>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1629352834/thumb-B750M_main_1_286x286.jpg" alt="">
+                                        <p>B750M ENC 가상 7.1 RGB SPECTRUM 진동 3D 멀티 플랫폼 게이밍 헤드셋</p>                                     
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1629352216/thumb-B700M_main_1_286x286.jpg" alt="">
+                                        <p>B700M ENC 가상 7.1 RGB SPECTRUM 3D 멀티 플랫폼 게이밍 헤드셋</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1629351048/thumb-B500M_main_1_286x286.jpg" alt="">
+                                        <p>B500M ENC 가상 7.1 RGB SPECTRUM 3D 멀티 플랫폼 게이밍 헤드셋</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1638750654/thumb-K595_main_1_286x286.jpg" alt="">
+                                        <p>K595 기계식 게이밍 키보드</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1629360388/thumb-K660_main_1_286x286.jpg" alt="">
+                                        <p>K660 ARC 기계식 게이밍 키보드 (청축)</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1629353531/thumb-M30_main_1_286x286.jpg" alt="">
+                                        <p>M30 RGB SPECTRUM 게이밍 마우스</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1629337784/thumb-A900_main_1_286x286.jpg" alt="">
+                                        <p>A900 3389 RGB SPECTRUM 게이밍 마우스</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1629337660/thumb-A660_main_1_286x286.jpg" alt="">
+                                        <p>A660 3325 RGB 게이밍 마우스</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1638752579/thumb-LPA2_main_1_286x286.jpg" alt="">
+                                        <p>LP-A2 게이밍 장패드</p>
+                                    </img>
+                                </li>
+                                <li class="pom">
+                                    <img src="https://www.abko.co.kr/data/brand/1638752505/thumb-LPA1_main_1_286x286.jpg" alt="">
+                                        <p>LP-A1 게이밍 장패드</p>
+                                    </img>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </section>    
+            <script>
+            $(document).ready(function(){
+                $(".sel").change(function(){
+                    location.href = this.value;
+                });
+            });    
+            </script>
+        </div>
+
+        <footer id="ft">
+            <div class="ft_wrap">
+                <nav class="fnb"><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a></nav>
+                <nav class="snb">
+                    <ul>
+                        <li><a href="" title="네이버"><i class="xi-naver-square"></i></a></li>
+                        <li><a href="" title="페이스북"><i class="xi-facebook-official"></i></a></li>
+                        <li><a href="" title="인스타그램"><i class="xi-instagram"></i></a></li>
+                        <li><a href="" title="카카오톡"><i class="xi-kakaotalk"></i></a></li>
+                    </ul>
+                </nav>
+                <p class="copyright">상호 : 주식회사 앱코 대표이사 : 조수민 개인정보관리책임자 : 펭수 관리자 메일 : webmaster2020@abko.co.kr (제휴, 상담문의 불가)
+                    통신판매신고 : 2020-서울강서-0310 본사 : 서울특별시 강남구 삼청동 20, 7층 (삼청동) 사업자 등록번호 : 000-00-00000
+                    고객센터 : 1644-0844 업무시간 : 09:30~17:00 점심시간 : 12:00~13:00 (공휴일 및 토/일 휴무)</p>
+            </div>
+
+        </footer>
+    </div>
+    
+</body>
+</html>
