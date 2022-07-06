@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <!--스타일 초기화 모듈 연결-->
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/bbs.css">
     <style>
      /*내게 필요한 스타일 초기화*/
     * {margin:0; padding:0;}
@@ -42,7 +43,7 @@
     .vs_tit {font-family: 'nam';}
     .vs_com { font-family: 'nam', sans-serif;}
     i[class*='xi'] { font-size:28px; color:#000; }
-    i[class*='xi']:hover { color :rgba(255, 0, 0, 0.514); }
+    i[class*='xi']:hover { color :#c40f39; }
     .wrap { clear:both; width:100%; }
 
     /* 헤더 */
@@ -57,13 +58,13 @@
     #gnb li .sub { display:none; position:absolute; left:10px; top:100px; z-index: 999;
     padding-left: 10px; width: 160px; height: 230px; background-color: #eee; ;}
     #gnb li .sub li { line-height: 38px;}
-    #gnb ul li .sub li:hover a { color:blue; }
+    #gnb ul li .sub li:hover a { color:#c40f39; }
     #gnb ul li:hover .sub { display:block; }
-    #gnb ul li:hover span { color : deepskyblue; }
+    #gnb ul li:hover span { color : #c40f39; }
     
     #tnb { float:right; padding-top: 10px; padding-bottom: 14px; margin-top: 30px;}
     #tnb a { font-size: 0.85em; padding-left: 32px;}
-    #tnb a:hover  {color:rgb(252, 136, 155); text-decoration: underline;}
+    #tnb a:hover  {color:#c40f39; text-decoration: underline;}
     #content { clear:both; width: 100%;}
 
     /* 비주얼 슬라이더 */
@@ -74,6 +75,8 @@
     .img_box li a img { display: block; width: 100%; height: auto; }
     .img_box .tit_box { position: absolute; top: 50px; left: 50px; color:#fff;
     text-shadow: 1px 1px 1px #333; padding-left: 40px; z-index:30;}
+    .img_box .tit_box_1 { position: absolute; top: 50px; left: 50px; color:black;
+     padding-left: 40px; z-index:30;}
     .vs_tit { font-size: 32px; line-height: 1.2;}
     .vs_com { font-size: 16px; padding-top: 35px;}
     .btn_group { position:absolute; bottom:0px; left:90px; z-index:40; }
@@ -87,12 +90,12 @@
     .grid_wrap { clear:both; width:100%; }
     .grid_wrap li { float:left; height:16.66667vm;
     background-position: center center;}
-    .grid_wrap li.item1 { background-color: #fff7ee; } 
-    .grid_wrap li.item2 { background-color: #fff7ee; }
-    .grid_wrap li.item3 { background-color: #fff7ee; }
-    .grid_wrap li.item4 { background-image: url("./monami/main/main/grid2.png");}
-    .grid_wrap li.item5 { background-image: url("./monami/main/main/grid3.png");}
-    .grid_wrap li.item6 { background-color: #fff7ee; } 
+    .grid_wrap li.item1 { background-color: #beffb194; } 
+    .grid_wrap li.item2 { background-color: #beffb15e; }
+    .grid_wrap li.item3 { background-color: #beffb136; }
+    .grid_wrap li.item4 { background-color: #beffb136;}
+    .grid_wrap li.item5 { background-color: #beffb136;}
+    .grid_wrap li.item6 { background-color: #beffb136; } 
 
     /* 그리드 */
     .col1 { width: 8.33333%; }
@@ -101,7 +104,6 @@
     .col4 { width: 33.33333%; }
     .col5 { width: 41.66667%; }
     .col6 { width: 50%; }
-    /* 확인 */
     .grid_wrap li a { display:block; padding: 28px; }
     .col_tit, .col_com { color:#000; }
     .col_tit { padding-top: 18px; }
@@ -119,7 +121,7 @@
     #ft { clear:both; width: 100%; padding: top 20px; border-top:3px solid #f1f1f1;
     height: 100px; background-color: #fffcdcc0;}
     .ft_wrap { clear:both; width:1280px; margin:0 auto;}
-    .fnb {float:left}
+    .fnb {float:left;}
     .fnb a { display:block; float:left; margin:14px; 
         margin-left: 0; margin-right: 28px;  font-size:12px; }
     .fnb a:after { content:"|"; padding-left: 28px; }
@@ -127,6 +129,7 @@
     .snb { float:right; }
     .snb ul li {float:left; margin: left 28px;}
     .copyright { clear:both; padding-bottom: 28px; font-size : 12px;}
+
     </style>
 </head>
 <body>
@@ -195,7 +198,7 @@
                     <li>
                         <a href="">
                             <img src="./monami/main/picc/picc1.png" alt="펜의 기록" class="pic1">
-                            <div class="tit_box">
+                            <div class="tit_box_1">
                                 <h2 class="vs_tit">어쩌면 삶은<br>인생이라는 종이 위에<br>써 내려가는<br>펜의 기록 같습니다.</h2>
                                 <p class="vs_com">그중에서도 지우고 싶지 않은 기록이 있습니다.<br>모나미는 언제나 당신의 행복한 기록과 함께 합니다.</p>
                             </div>
@@ -268,50 +271,89 @@
                 </script>
             </figure>
             </div>
-            <div class="grid_box">
+            <!-- <div class="grid_box">
                 <ul class="grid_wrap">
                     <li class="col2 item1">
                         <a href="">
-                            <h3 class="col_tit"></h3>
-                            <p class="col_com"></p>
+                            <h3 class="col_tit">News</h3>
+                            <p class="col_com">노트북 장시간 사용에 눈 건강이 걱정이라면? ‘삼성 OLED’가 해답</p>
                             <span class="arrow"></span>
                         </a>
                     </li>
                     <li class="col2 item2">
-                        <a href="gb.html#page2">
-                            <h3 class="col_tit"></h3>
-                            <p class="col_com">아날로그 감성 담아 엘라고와 콜라보 제품 출시</p>
+                        <a href="">
+                            <h3 class="col_tit">SDC Culture</h3>
+                            <p class="col_com">기술과 사람을 더욱 가치있게 연결하는 최고의 디스플레이를 만듭니다.</p>
                             <span class="arrow"></span>
                         </a>
                     </li>
                     <li class="col2 item3">
                         <a href="">
-                        <h3 class="col_tit"></h3>
-                        <p class="col_com"></p>
-                        <span class="arrow"></span>
-                        </a>
-                     </li>
-                    <li class="col2 item4">
-                        <a href="gb.html#page4">
-                            <h3 class="col_tit">INQUIR</h3>
-                            <p class="col_com"></p>
+                            <h3 class="col_tit">채용정보</h3>
+                            <p class="col_com">삼성디스플레이는 도전, 창의, 열정을 가진 전문 인재를 기다립니다.</p>
                             <span class="arrow"></span>
                         </a>
                     </li>
-                    <li class="col2 item5">
-                        <a href="gb.html#page5">
-                            <h3 class="col_tit">FAMILY SHOP</h3>
-                            <p class="col_com"></p>
-                            <span class="arrow"></span>
+                    <li class="col2 item4">
+                        <a href="">
+                            <h3 class="col_tit w">OLED Display</h3>
+                            <p class="col_com w">Why 삼성 OLED</p>
                         </a>
-                </li><li class="col2 item6">
-                    <a href="">
-                        <h3 class="col_tit"></h3>
-                        <p class="col_com"></p>
-                        <span class="arrow"></span>
-                    </a>
-                </li>
+                    </li>
+                    <li class="col2 item5">
+                        <a href="">
+                            <h3 class="col_tit w">QD Display</h3>
+                            <p class="col_com w">Take The Quantum Leap</p>
+                        </a>
+                    </li>
+                    <li class="col2 item6">
+                        <a href="">
+                            <h3 class="col_tit w">Galaxy Z Fold 3의<br> 비밀을 파헤쳐 보자</h3>
+                        </a>
+                    </li>
                 </ul>
+            </div> -->
+            <div class="bbs">
+                <div class="conwrap">
+                    <div class="news">
+                        <div class="tit">
+                            <h2>MONAMI NEWS</h2>
+                            <a href="">MORE</a>
+                        </div>
+                        <ul class="news_lists">
+                                                                            <li class="first">
+                                    <div class="thum">
+                                        <a href=""><img src="./monami/main/bbs1.jpg" width="164" height="116" /></a>
+                                    </div>
+                                    <div class="txt">
+                                        <a href="">
+                                            <div class="sbj">'ESG는 선택 아닌 필수' 유통업계, 친환경 중심..</div>
+                                            <p>
+                                                'ESG는 선택 아닌 필수' 유통업계, 친환경 중심 '업사이클링' 인기-미닝아웃·돈쭐·가심비…가치소비 확산으로 ESG ..									</p>
+                                            <span class="date">2022-07-01</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                                                                                    <li><a href="">- “다 쓴 펜, 버리지 마세요” 모나미, 친환경 프로젝트 ‘그린백 캠..</a><span class="date">2022-06-27</span></li>
+                                                                                                    <li><a href="">- ‘직접 쓰고, 찍고, 만들고’ 소비자 참여형 마케팅으로 MZ세대 잡는..</a><span class="date">2022-06-14</span></li>
+                                                                                                    <li><a href="">- 온 국민이 즐기는 영상 공모전 ‘모나미 15초 비디오 어워즈’ 개최</a><span class="date">2022-05-18</span></li>
+                                                                    </ul>
+                    </div>
+                    <div class="inquiry">
+                        <div class="tit">
+                            <h2>INQUIRY</h2>
+                        </div>
+                        <p>언제나 소중한 의견에 귀 기울이겠습니다.<br />궁금한 사항은 문의하세요.</p>
+                        <a href="">INQUIRY NOW</a>
+                    </div>
+                    <div class="shop">
+                        <div class="tit">
+                            <h2>FAMILY SHOP</h2>
+                        </div>
+                        <p>패밀리샵은 모나미와 함께 협력하는 문구<br />소매 매장입니다. 주변 패밀리샵을 찾아보세요.</p>
+                        <a class="find_f">FIND SHOP</a>
+                    </div>
+                </div>
             </div>
         </div>
         <footer id="ft">
